@@ -1,4 +1,4 @@
-# **Bonjour et bienvenue sur ma page dédiée à mon projet bachelor !**
+# **Bonjour et bienvenue sur ma page dédiée à mon travail de bachelor !**
 
 ## Vous trouverez ici tout les fichiers et algorithmes que j'ai codés et utilisés pour mon travail.
 
