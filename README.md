@@ -1,6 +1,6 @@
 # **Bonjour et bienvenue sur ma page dédiée à mon projet bachelor !**
 
-## Vous trouverez ici tout les fichiers et algorithmes que j'ai codés et utilisé pour mon travail.
+## Vous trouverez ici tout les fichiers et algorithmes que j'ai codés et utilisés pour mon travail.
 
 Les différents dossiers :
 
