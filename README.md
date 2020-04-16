@@ -6,4 +6,4 @@ Les différents dossiers :
 
 - Fonctions : algorithmes servants aux tests
 - Stratégies : exemples de stratégies analysées
-- Listes de tickers : fichier csv contenant quelques tickers (symbol) pouvant être utilisés
+- Listes de tickers : fichiers csv contenant quelques tickers (symbol) pouvant être utilisés
