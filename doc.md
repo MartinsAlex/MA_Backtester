@@ -27,9 +27,11 @@ pip install https://github.com/MartinsAlex/MA_Backtester/script/MA_Backtester.py
 
 ## La fonction et ses arguments
 
+test
 
 ## Sources des données et symbols utilisables
 
+test
 
 
 
