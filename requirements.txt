@@ -10,10 +10,6 @@ colorclass==2.2.0
 cssselect==1.1.0
 cycler==0.10.0
 docutils==0.16
-Flask==1.0.3
-flask-app==1.0.1
-Flask-Migrate==2.5.2
-Flask-SQLAlchemy==2.4.0
 Flask-Testing==0.7.1
 idna==2.9
 iso8601==0.1.12
@@ -66,4 +62,3 @@ websocket-client==0.57.0
 Werkzeug==1.0.0
 xlrd==1.2.0
 XlsxWriter==1.2.8
-
