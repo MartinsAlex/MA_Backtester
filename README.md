@@ -27,6 +27,9 @@
                                 capital=1_000_000)
     
 ```
+
+La fonction retourne deux tables, la première contient les différentes statistiques de la stratégie :
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
