@@ -61,7 +61,7 @@ La fonction retourne deux tables pandas et une figure matplotlib. La première t
       <th>Strategy Annualized Volatility</th>
       <th>Asset Annualized Volatility</th>
       <th>Used Stop-Loss</th>
-      <th>Used Stop-Gain</th>
+      <th>Used Take-Profit</th>
       <th>Asset Sharpe Ratio</th>
       <th>Market Exposure</th>
       <th>Strategy Sharpe Ratio</th>
