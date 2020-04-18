@@ -265,7 +265,7 @@ plt.show()
 
 ```
 
-![png](https://github.com/MartinsAlex/Backtesting/tree/master/readme_files/btc.png)
+![png](readme_files/btc.png)
 
 
 
