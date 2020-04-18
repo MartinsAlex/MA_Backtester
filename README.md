@@ -257,6 +257,14 @@ La seconde, les transactions effectuées :
 </table>
 
 
+Le dernier élément retourné est un graphique, si l'argument showplot est "True" :
+
+```python
+
+plt.show()
+
+```
+
 
 
 
