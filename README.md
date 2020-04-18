@@ -3,6 +3,11 @@
 
 ---
 
+# Installation
+## &nbsp;&nbsp;&nbsp;`pip install --upgrade MA_Backtester`
+   - mplfinance requires [matplotlib](https://pypi.org/project/matplotlib/) and [pandas](https://pypi.org/project/pandas/)
+
+---
 ## Vous trouverez ici tout les fichiers et algorithmes que j'ai codés et utilisés pour mon travail.
 
 Les différents dossiers :
