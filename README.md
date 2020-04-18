@@ -16,6 +16,7 @@
 
 # Comment ça marche ?
 
+Un exemple :
 
 ```python
     import MA_Backtester as mab
