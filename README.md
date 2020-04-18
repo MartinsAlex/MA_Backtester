@@ -1,4 +1,4 @@
-[![Build Status]
+[![Build Status](https://travis-ci.org/{{MartinsAlex}}/{{Backtesting}}.png?branch={{master}})](https://travis-ci.org/{{MartinsAlex}}/{{Backtesting}})
 
 # **Bonjour et bienvenue sur la page dédiée à mon travail de bachelor !**
 
