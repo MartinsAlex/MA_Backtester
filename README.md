@@ -269,5 +269,5 @@ plt.show()
 
 ![png](readme_files/btc.png)
 
-
+Activez l'intéraction graphique pour une meilleure expérience.
 
