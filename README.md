@@ -3,7 +3,7 @@
 
 ---
 
-# Contenu :
+# Contenu de la page :
 
 - [Algorithmes](https://github.com/MartinsAlex/Backtesting/tree/master/Algorithmes) : toutes les fonctions
 - [Stratégies](https://github.com/MartinsAlex/Backtesting/tree/master/Strat%C3%A9gies) : exemples de stratégies analysées
