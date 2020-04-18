@@ -19,7 +19,7 @@
 
 ## Example 1 :
 
-#### Action Crédit Suisse, 2002 à 2010. Stratégie basée sur le croisement des moyennes mobiles simple de 50 et 200 jours. 
+#### Action Crédit Suisse, 2002 à 2010. Stratégie basée sur le croisement des moyennes mobiles simples de 50 et 200 jours. 
 - Capital initial : 10'000 USD 
 - Prise de position short et long.
 
