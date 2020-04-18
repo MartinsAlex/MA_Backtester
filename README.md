@@ -19,7 +19,7 @@
 Un exemple :
 
 ```python
-    import MA_Backtester as mab
+    from MA_Backtester import MA_CROSS
     
     stats, transactions, fig = MA_CROSS(["BTC-USD"], 50, 200, "2015-02-01", "2020-04-18", 
                                 ma="simple", 
