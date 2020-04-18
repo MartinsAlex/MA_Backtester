@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/MartinsAlex/MA_Backtester.svg?branch=master)](https://travis-ci.com/MartinsAlex/MA_Backtester)
+
 # MA_Backtester
 ## Un module permettant le backtesting de stratégies de trading, basées sur le croisement de moyennes mobiles
 
