@@ -22,11 +22,8 @@ Un exemple :
 ```python
     from MA_Backtester import MA_CROSS
     
-    stats, transactions, fig = MA_CROSS(["BTC-USD"], 50, 200, "2015-02-01", "2020-04-18", 
-                                ma="simple", 
-                                showplot=True, 
-                                shortLong="both", 
-                                capital=1_000_000)
+    stats, transactions, fig = MA_CROSS(["CS"], 50, 200, "2000-01-01", "2010-01-01", 
+                                      ma="simple", showplot=True, shortLong="both", capital=10_000)
     
 ```
 Les différents arguments sont expliqués dans la doc. Concernant les tickers, tout ceux de Yahoo Finance peuvent être utilisés ainsi que ceux de FRED (forex).
@@ -74,38 +71,38 @@ La fonction retourne deux tables, la première contient différentes statistique
   <tbody>
     <tr>
       <th>1</th>
-      <td>2015-02-01</td>
-      <td>2020-04-18</td>
-      <td>BTC-USD</td>
+      <td>2000-01-03</td>
+      <td>2009-12-31</td>
+      <td>CS</td>
+      <td>9</td>
       <td>6</td>
       <td>3</td>
-      <td>3</td>
-      <td>3.17921e+06</td>
-      <td>-1.31789e+06</td>
-      <td>0.5</td>
-      <td>1396.16</td>
-      <td>1.98418e+07</td>
-      <td>3.044e+07</td>
-      <td>30.44</td>
-      <td>19.8418</td>
-      <td>-0.646593</td>
-      <td>-0.83399</td>
-      <td>-6681.06</td>
-      <td>-1.4194e+06</td>
-      <td>1.98413e+07</td>
-      <td>0.643272</td>
-      <td>0.624574</td>
+      <td>5859</td>
+      <td>-2148.08</td>
+      <td>0.6667</td>
+      <td>3.49751</td>
+      <td>12994.8</td>
+      <td>2871.65</td>
+      <td>0.287165</td>
+      <td>1.29948</td>
+      <td>-0.550622</td>
+      <td>-0.74091</td>
+      <td>28.7958</td>
+      <td>3794.66</td>
+      <td>12999.6</td>
+      <td>0.47174</td>
+      <td>0.463312</td>
       <td>0</td>
       <td>0</td>
-      <td>0.729799</td>
-      <td>0.88124</td>
-      <td>0.800122</td>
-      <td>6.92948e+09</td>
-      <td>276</td>
-      <td>1000000</td>
-      <td>2.08418e+07</td>
-      <td>0.578703</td>
-      <td>0.495053</td>
+      <td>0.0523934</td>
+      <td>0.913718</td>
+      <td>0.0685191</td>
+      <td>483259</td>
+      <td>238</td>
+      <td>10000</td>
+      <td>22994.8</td>
+      <td>0.0256171</td>
+      <td>0.0870134</td>
     </tr>
   </tbody>
 </table>
@@ -128,132 +125,192 @@ La seconde, les transactions effectuées :
   <tbody>
     <tr>
       <th>0</th>
-      <td>2015-09-13</td>
+      <td>2000-11-08</td>
       <td>Buy Short</td>
-      <td>230.643997</td>
-      <td>BTC-USD</td>
+      <td>24.747902</td>
+      <td>CS</td>
       <td>NaN</td>
-      <td>4336</td>
+      <td>404</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2015-10-28</td>
+      <td>2002-01-10</td>
       <td>Sell Short</td>
-      <td>304.618011</td>
-      <td>BTC-USD</td>
-      <td>-73.974014</td>
-      <td>4336</td>
-      <td>-320751</td>
+      <td>24.150114</td>
+      <td>CS</td>
+      <td>0.597788</td>
+      <td>404</td>
+      <td>241.506</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2015-10-28</td>
+      <td>2002-01-10</td>
       <td>Buy Long</td>
-      <td>304.618011</td>
-      <td>BTC-USD</td>
+      <td>24.150114</td>
+      <td>CS</td>
       <td>NaN</td>
-      <td>2230</td>
+      <td>424</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>2018-03-29</td>
+      <td>2002-03-01</td>
       <td>Sell Long</td>
-      <td>6890.520020</td>
-      <td>BTC-USD</td>
-      <td>6585.902008</td>
-      <td>2230</td>
-      <td>1.46866e+07</td>
+      <td>19.280340</td>
+      <td>CS</td>
+      <td>-4.869774</td>
+      <td>424</td>
+      <td>-2064.78</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>2018-03-29</td>
+      <td>2002-03-01</td>
       <td>Buy Short</td>
-      <td>6890.520020</td>
-      <td>BTC-USD</td>
+      <td>19.280340</td>
+      <td>CS</td>
       <td>NaN</td>
-      <td>2230</td>
+      <td>424</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>2019-04-23</td>
+      <td>2003-05-16</td>
       <td>Sell Short</td>
-      <td>5464.866699</td>
-      <td>BTC-USD</td>
-      <td>1425.653320</td>
-      <td>2230</td>
-      <td>3.17921e+06</td>
+      <td>15.553974</td>
+      <td>CS</td>
+      <td>3.726366</td>
+      <td>424</td>
+      <td>1579.98</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>2019-04-23</td>
+      <td>2003-05-16</td>
       <td>Buy Long</td>
-      <td>5464.866699</td>
-      <td>BTC-USD</td>
+      <td>15.553974</td>
+      <td>CS</td>
       <td>NaN</td>
-      <td>3393</td>
+      <td>627</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>2019-10-25</td>
+      <td>2004-05-18</td>
       <td>Sell Long</td>
-      <td>9244.972656</td>
-      <td>BTC-USD</td>
-      <td>3780.105957</td>
-      <td>3393</td>
-      <td>1.28259e+07</td>
+      <td>19.864042</td>
+      <td>CS</td>
+      <td>4.310068</td>
+      <td>627</td>
+      <td>2702.41</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>2019-10-25</td>
+      <td>2004-05-18</td>
       <td>Buy Short</td>
-      <td>9244.972656</td>
-      <td>BTC-USD</td>
+      <td>19.864042</td>
+      <td>CS</td>
       <td>NaN</td>
-      <td>3393</td>
+      <td>627</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>2020-02-19</td>
+      <td>2004-11-19</td>
       <td>Sell Short</td>
-      <td>9633.386719</td>
-      <td>BTC-USD</td>
-      <td>-388.414062</td>
-      <td>3393</td>
-      <td>-1.31789e+06</td>
+      <td>23.290010</td>
+      <td>CS</td>
+      <td>-3.425968</td>
+      <td>627</td>
+      <td>-2148.08</td>
     </tr>
     <tr>
       <th>10</th>
-      <td>2020-02-19</td>
+      <td>2004-11-19</td>
       <td>Buy Long</td>
-      <td>9633.386719</td>
-      <td>BTC-USD</td>
+      <td>23.290010</td>
+      <td>CS</td>
       <td>NaN</td>
-      <td>3120</td>
+      <td>443</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>11</th>
-      <td>2020-03-25</td>
+      <td>2006-08-15</td>
       <td>Sell Long</td>
-      <td>6681.062988</td>
-      <td>BTC-USD</td>
-      <td>-2952.323730</td>
-      <td>3120</td>
-      <td>-9.21125e+06</td>
+      <td>34.777523</td>
+      <td>CS</td>
+      <td>11.487513</td>
+      <td>443</td>
+      <td>5088.97</td>
     </tr>
     <tr>
       <th>12</th>
-      <td>2020-03-25</td>
+      <td>2006-08-15</td>
       <td>Buy Short</td>
-      <td>6681.062988</td>
-      <td>BTC-USD</td>
+      <td>34.777523</td>
+      <td>CS</td>
       <td>NaN</td>
-      <td>3120</td>
+      <td>443</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>2006-09-27</td>
+      <td>Sell Short</td>
+      <td>36.907272</td>
+      <td>CS</td>
+      <td>-2.129749</td>
+      <td>443</td>
+      <td>-943.479</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>2006-09-27</td>
+      <td>Buy Long</td>
+      <td>36.907272</td>
+      <td>CS</td>
+      <td>NaN</td>
+      <td>392</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>2007-08-24</td>
+      <td>Sell Long</td>
+      <td>43.742233</td>
+      <td>CS</td>
+      <td>6.834961</td>
+      <td>392</td>
+      <td>2679.3</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>2007-08-24</td>
+      <td>Buy Short</td>
+      <td>43.742233</td>
+      <td>CS</td>
+      <td>NaN</td>
+      <td>392</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>2009-05-19</td>
+      <td>Sell Short</td>
+      <td>28.795807</td>
+      <td>CS</td>
+      <td>14.946426</td>
+      <td>392</td>
+      <td>5859</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>2009-05-19</td>
+      <td>Buy Long</td>
+      <td>28.795807</td>
+      <td>CS</td>
+      <td>NaN</td>
+      <td>799</td>
       <td>NaN</td>
     </tr>
   </tbody>
