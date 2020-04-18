@@ -1,6 +1,7 @@
-# **Bonjour et bienvenue sur la page dédiée à mon travail de bachelor !**
+# MA_Backtester
+## Un module permettant le backtesting de stratégies de trading, basées sur le croisement de moyennes mobiles
 
-
+---
 
 ## Vous trouverez ici tout les fichiers et algorithmes que j'ai codés et utilisés pour mon travail.
 
