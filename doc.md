@@ -9,7 +9,7 @@
   - [Installation](#installation)
   - [Pré-requis](#pré-requis)
   - [La fonction et ses arguments](https://github.com/MartinsAlex/MA_Backtester/blob/master/doc.md#la-fonction-et-ses-arguments)
-  - [Sources des données et symbols utilisables](#sources des données et symbols utilisables)
+  - [Sources des données et symbols utilisables](https://github.com/MartinsAlex/MA_Backtester/blob/master/doc.md#sources-des-donn%C3%A9es-et-symbols-utilisables)
 
 ## Installation
 
