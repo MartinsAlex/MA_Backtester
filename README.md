@@ -19,4 +19,9 @@
 
 ```python
     import MA_Backtester as mab
+    
+    stats, transactions, fig = MA_CROSS(["BTC-USD"], 50, 200, "2015-02-01", dt.datetime.today(), ma="simple", showplot=True, shortLong="both", capital=1_000_000)
+    
 ```
+
+
