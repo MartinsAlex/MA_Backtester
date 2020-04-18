@@ -25,6 +25,7 @@
 
 ```python
     from MA_Backtester import MA_CROSS
+    import matplotlib.pyplot as plt
     
     stats, transactions, fig = MA_CROSS(["CS"], 50, 200, "2000-01-01", "2010-01-01", 
                                       ma="simple", showplot=True, shortLong="both", capital=10_000)
