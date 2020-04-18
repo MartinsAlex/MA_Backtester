@@ -28,7 +28,7 @@
     
 ```
 
-La fonction retourne deux tables, la première contient les différentes statistiques de la stratégie :
+La fonction retourne deux tables, la première contient différentes statistiques concernant la stratégie :
 
 <table border="1" class="dataframe">
   <thead>
