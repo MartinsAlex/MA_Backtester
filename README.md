@@ -17,7 +17,12 @@
 
 # Comment ça marche ?
 
-Un exemple :
+## Example 1 :
+
+#### Action Crédit Suisse, de 2002 à 2010. Stratégie basée sur le croisement des moyennes mobiles 50 et 200 jours. 
+- Type de moyenne : simple
+- Capital initial : 10'000 USD 
+- Prise de position short et long.
 
 ```python
     from MA_Backtester import MA_CROSS
