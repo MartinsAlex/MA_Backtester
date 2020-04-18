@@ -265,7 +265,7 @@ plt.show()
 
 ```
 
-
+![png](https://raw.githubusercontent.com/matplotlib/mplfinance/master/readme_files/readme_4_1.png)
 
 
 
