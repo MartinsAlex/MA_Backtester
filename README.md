@@ -107,6 +107,156 @@ La fonction retourne deux tables, la première contient les différentes statist
   </tbody>
 </table>
 
+La seconde, les transactions effectuées :
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Date</th>
+      <th>Type</th>
+      <th>Price</th>
+      <th>Ticker</th>
+      <th>P/L</th>
+      <th>Number of shares</th>
+      <th>Total P/L</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2015-09-13</td>
+      <td>Buy Short</td>
+      <td>230.643997</td>
+      <td>BTC-USD</td>
+      <td>NaN</td>
+      <td>4336</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2015-10-28</td>
+      <td>Sell Short</td>
+      <td>304.618011</td>
+      <td>BTC-USD</td>
+      <td>-73.974014</td>
+      <td>4336</td>
+      <td>-320751</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2015-10-28</td>
+      <td>Buy Long</td>
+      <td>304.618011</td>
+      <td>BTC-USD</td>
+      <td>NaN</td>
+      <td>2230</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2018-03-29</td>
+      <td>Sell Long</td>
+      <td>6890.520020</td>
+      <td>BTC-USD</td>
+      <td>6585.902008</td>
+      <td>2230</td>
+      <td>1.46866e+07</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2018-03-29</td>
+      <td>Buy Short</td>
+      <td>6890.520020</td>
+      <td>BTC-USD</td>
+      <td>NaN</td>
+      <td>2230</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>2019-04-23</td>
+      <td>Sell Short</td>
+      <td>5464.866699</td>
+      <td>BTC-USD</td>
+      <td>1425.653320</td>
+      <td>2230</td>
+      <td>3.17921e+06</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2019-04-23</td>
+      <td>Buy Long</td>
+      <td>5464.866699</td>
+      <td>BTC-USD</td>
+      <td>NaN</td>
+      <td>3393</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>2019-10-25</td>
+      <td>Sell Long</td>
+      <td>9244.972656</td>
+      <td>BTC-USD</td>
+      <td>3780.105957</td>
+      <td>3393</td>
+      <td>1.28259e+07</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>2019-10-25</td>
+      <td>Buy Short</td>
+      <td>9244.972656</td>
+      <td>BTC-USD</td>
+      <td>NaN</td>
+      <td>3393</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>2020-02-19</td>
+      <td>Sell Short</td>
+      <td>9633.386719</td>
+      <td>BTC-USD</td>
+      <td>-388.414062</td>
+      <td>3393</td>
+      <td>-1.31789e+06</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2020-02-19</td>
+      <td>Buy Long</td>
+      <td>9633.386719</td>
+      <td>BTC-USD</td>
+      <td>NaN</td>
+      <td>3120</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>2020-03-25</td>
+      <td>Sell Long</td>
+      <td>6681.062988</td>
+      <td>BTC-USD</td>
+      <td>-2952.323730</td>
+      <td>3120</td>
+      <td>-9.21125e+06</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>2020-03-25</td>
+      <td>Buy Short</td>
+      <td>6681.062988</td>
+      <td>BTC-USD</td>
+      <td>NaN</td>
+      <td>3120</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+
+
 
 
 
