@@ -33,7 +33,7 @@
 ```
 Les différents arguments sont expliqués dans la doc. Concernant les tickers, tout ceux de Yahoo Finance peuvent être utilisés ainsi que ceux de FRED (forex).
 
-La fonction retourne deux tables, la première contient différentes statistiques concernant la stratégie :
+La fonction retourne deux tables pandas et une figure matplotlib. La première table contient différentes statistiques concernant la stratégie :
 
 <table border="1" class="dataframe">
   <thead>
