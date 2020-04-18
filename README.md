@@ -329,7 +329,7 @@ plt.show()
 
 ```
 
-![png](readme_files/btc.png)
+![png](readme_files/Figure_1.png)
 
 Activez l'intéraction graphique pour une meilleure expérience.
 
