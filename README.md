@@ -14,13 +14,17 @@
 ---
 
 
-# Comment ça marche ? :
+# Comment ça marche ?
 
 
 ```python
     import MA_Backtester as mab
     
-    stats, transactions, fig = MA_CROSS(["BTC-USD"], 50, 200, "2015-02-01", dt.datetime.today(), ma="simple", showplot=True, shortLong="both", capital=1_000_000)
+    stats, transactions, fig = MA_CROSS(["BTC-USD"], 50, 200, "2015-02-01", "2020-04-18", 
+                                ma="simple", 
+                                showplot=True, 
+                                shortLong="both", 
+                                capital=1_000_000)
     
 ```
 
