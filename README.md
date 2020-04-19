@@ -354,11 +354,16 @@ Activez l'intéraction graphique pour une meilleure expérience.
 
 ```python
 
-results, transactions, fig = MA_CROSS(["AMZN"], 20, 50, "2014-01-01", "2016-01-01", 
+stats, transactions, fig = MA_CROSS(["AMZN"], 20, 50, "2014-01-01", "2016-01-01", 
                                       ma="weighted", showplot=True, shortLong="long", capital=1_000_000,
                                      stopLoss=0.05, takeProfit=0.1)
 ```
 
+```python
+
+stats
+
+```
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -609,10 +614,17 @@ plt.show()
 
 ```python
 
-results, transactions, fig = MA_CROSS(["BTC-USD"], 8, 13, "2017-09-01", "2018-07-01", 
+stats, transactions, fig = MA_CROSS(["BTC-USD"], 8, 13, "2017-09-01", "2018-07-01", 
                                       ma="exp", showplot=True, shortLong="long", capital=100_000)
                                       
 ```
+
+```python
+
+stats
+
+```
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -690,7 +702,128 @@ results, transactions, fig = MA_CROSS(["BTC-USD"], 8, 13, "2017-09-01", "2018-07
   </tbody>
 </table>
 
+```python
 
+transactions
+
+```
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Date</th>
+      <th>Type</th>
+      <th>Price</th>
+      <th>Ticker</th>
+      <th>P/L</th>
+      <th>Number of shares</th>
+      <th>Total P/L</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2017-09-27</td>
+      <td>Buy Long</td>
+      <td>4174.729980</td>
+      <td>BTC-USD</td>
+      <td>NaN</td>
+      <td>24</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2017-11-12</td>
+      <td>Sell Long</td>
+      <td>5950.069824</td>
+      <td>BTC-USD</td>
+      <td>1775.339844</td>
+      <td>24</td>
+      <td>42608.2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2017-11-15</td>
+      <td>Buy Long</td>
+      <td>7315.540039</td>
+      <td>BTC-USD</td>
+      <td>NaN</td>
+      <td>19</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2017-12-23</td>
+      <td>Sell Long</td>
+      <td>14699.200195</td>
+      <td>BTC-USD</td>
+      <td>7383.660156</td>
+      <td>19</td>
+      <td>140290</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2018-01-05</td>
+      <td>Buy Long</td>
+      <td>17429.500000</td>
+      <td>BTC-USD</td>
+      <td>NaN</td>
+      <td>16</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>2018-01-11</td>
+      <td>Sell Long</td>
+      <td>13405.799805</td>
+      <td>BTC-USD</td>
+      <td>-4023.700195</td>
+      <td>16</td>
+      <td>-64379.2</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2018-02-16</td>
+      <td>Buy Long</td>
+      <td>10233.900391</td>
+      <td>BTC-USD</td>
+      <td>NaN</td>
+      <td>21</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>2018-03-08</td>
+      <td>Sell Long</td>
+      <td>9395.009766</td>
+      <td>BTC-USD</td>
+      <td>-838.890625</td>
+      <td>21</td>
+      <td>-17616.7</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>2018-04-12</td>
+      <td>Buy Long</td>
+      <td>7895.959961</td>
+      <td>BTC-USD</td>
+      <td>NaN</td>
+      <td>25</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>2018-05-10</td>
+      <td>Sell Long</td>
+      <td>8441.490234</td>
+      <td>BTC-USD</td>
+      <td>545.530273</td>
+      <td>25</td>
+      <td>13638.3</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
