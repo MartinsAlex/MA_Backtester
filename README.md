@@ -17,7 +17,7 @@
 
 # Comment ça marche ?
 
-# Example 1 :
+## Example 1 :
 
 #### Action Crédit Suisse, 2002 à 2010. Stratégie basée sur le croisement des moyennes mobiles simples de 50 et 200 jours. 
 - Capital initial : 10'000 USD 
@@ -253,4 +253,257 @@ plt.show()
 ![png](readme_files/Figure_1.png)
 
 Activez l'intéraction graphique pour une meilleure expérience.
+
+## Example 2 :
+
+#### Action Amazon, de 2018 à 2019. Stratégie basée sur le croisement des moyennes mobiles pondérées de 20 et 50 jours. 
+- Capital initial : 1'000'000 USD 
+- Prise de position long only
+- Stop-loss : 5 %
+- Take-Profit : 10 %
+
+```python
+
+results, transactions, fig = MA_CROSS(["AMZN"], 20, 50, "2014-01-01", "2016-01-01", 
+                                      ma="weighted", showplot=True, shortLong="long", capital=1_000_000,
+                                     stopLoss=0.05, takeProfit=0.1)
+```
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>From</th>
+      <th>To</th>
+      <th>Ticker</th>
+      <th>Number of Trades</th>
+      <th>Winning Trades</th>
+      <th>Losing Trades</th>
+      <th>Largest Winning Trade</th>
+      <th>Largest Losing Trade</th>
+      <th>% Profitable</th>
+      <th>Expectancy</th>
+      <th>Total Realized Return</th>
+      <th>Buy &amp; Hold Return</th>
+      <th>Asset Return %</th>
+      <th>Strategy Return %</th>
+      <th>Strategy Max Drawdown</th>
+      <th>Asset Max Drawdown</th>
+      <th>Open position</th>
+      <th>Open Trade P/L</th>
+      <th>Total Return</th>
+      <th>Strategy Annualized Volatility</th>
+      <th>Asset Annualized Volatility</th>
+      <th>Used Stop-Loss</th>
+      <th>Used Take-Profit</th>
+      <th>Asset Sharpe Ratio</th>
+      <th>Market Exposure</th>
+      <th>Strategy Sharpe Ratio</th>
+      <th>Asset Daily Avg Volume</th>
+      <th>Avg Holding Days</th>
+      <th>Initial Capital</th>
+      <th>Final Capital</th>
+      <th>Asset Annualized Return %</th>
+      <th>Strategy Annualized Return %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>2014-01-02</td>
+      <td>2015-12-31</td>
+      <td>AMZN</td>
+      <td>7</td>
+      <td>2</td>
+      <td>5</td>
+      <td>62.74</td>
+      <td>-34.81</td>
+      <td>0.2857</td>
+      <td>-4.25571</td>
+      <td>-87733</td>
+      <td>698344</td>
+      <td>0.698344</td>
+      <td>-0.087733</td>
+      <td>-0.132607</td>
+      <td>-0.29505</td>
+      <td>0</td>
+      <td>0</td>
+      <td>-87733</td>
+      <td>0.335705</td>
+      <td>0.328757</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0.804009</td>
+      <td>0.253968</td>
+      <td>-0.541539</td>
+      <td>3.94081e+06</td>
+      <td>18</td>
+      <td>1000000</td>
+      <td>912267</td>
+      <td>0.303205</td>
+      <td>-0.0448733</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Date</th>
+      <th>Type</th>
+      <th>Price</th>
+      <th>Ticker</th>
+      <th>P/L</th>
+      <th>Number of shares</th>
+      <th>Total P/L</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2014-03-17</td>
+      <td>Buy Long</td>
+      <td>375.040009</td>
+      <td>AMZN</td>
+      <td>NaN</td>
+      <td>2666</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2014-03-24</td>
+      <td>Stop Loss Long</td>
+      <td>351.850006</td>
+      <td>AMZN</td>
+      <td>-23.190002</td>
+      <td>2666</td>
+      <td>-61824.5</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2014-06-06</td>
+      <td>Buy Long</td>
+      <td>329.670013</td>
+      <td>AMZN</td>
+      <td>NaN</td>
+      <td>2846</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2014-07-31</td>
+      <td>Stop Loss Long</td>
+      <td>312.989990</td>
+      <td>AMZN</td>
+      <td>-16.680023</td>
+      <td>2846</td>
+      <td>-47471.3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2014-08-28</td>
+      <td>Buy Long</td>
+      <td>340.019989</td>
+      <td>AMZN</td>
+      <td>NaN</td>
+      <td>2620</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>2014-09-22</td>
+      <td>Sell Long</td>
+      <td>324.500000</td>
+      <td>AMZN</td>
+      <td>-15.519989</td>
+      <td>2620</td>
+      <td>-40662.4</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2014-11-19</td>
+      <td>Buy Long</td>
+      <td>326.540009</td>
+      <td>AMZN</td>
+      <td>NaN</td>
+      <td>2603</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>2014-12-08</td>
+      <td>Stop Loss Long</td>
+      <td>306.640015</td>
+      <td>AMZN</td>
+      <td>-19.899994</td>
+      <td>2603</td>
+      <td>-51799.7</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>2015-01-30</td>
+      <td>Buy Long</td>
+      <td>354.529999</td>
+      <td>AMZN</td>
+      <td>NaN</td>
+      <td>2252</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>2015-03-31</td>
+      <td>Sell Long</td>
+      <td>372.100006</td>
+      <td>AMZN</td>
+      <td>17.570007</td>
+      <td>2252</td>
+      <td>39567.7</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2015-04-13</td>
+      <td>Buy Long</td>
+      <td>382.359985</td>
+      <td>AMZN</td>
+      <td>NaN</td>
+      <td>2191</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>2015-04-24</td>
+      <td>Stop Gain Long</td>
+      <td>445.100006</td>
+      <td>AMZN</td>
+      <td>62.740021</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>2015-09-17</td>
+      <td>Buy Long</td>
+      <td>538.869995</td>
+      <td>AMZN</td>
+      <td>NaN</td>
+      <td>1810</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>2015-09-28</td>
+      <td>Stop Loss Long</td>
+      <td>504.059998</td>
+      <td>AMZN</td>
+      <td>-34.809998</td>
+      <td>1810</td>
+      <td>-63006.1</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
 
