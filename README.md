@@ -851,3 +851,22 @@ plt.show()
 ![png](readme_files/Figure_3.png)
 
 
+&nbsp;
+## Example 4 :
+
+#### Analyse de 5 devises...
+- Capital initial : 100'000 USD 
+- Prise de position long
+
+```python
+
+tickerList = [DEX.., ... , ...]
+
+stats, transactions, fig = MA_CROSS(tickerList, 8, 13, "2017-09-01", "2018-07-01", 
+                                      ma="exp", showplot=False, shortLong="long", capital=100_000)
+                                      
+```
+
+
+
+
