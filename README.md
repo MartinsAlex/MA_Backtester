@@ -19,6 +19,11 @@
 
 # Installation :
 
+```python
+
+pip install ....
+    
+```
 
 
 &nbsp;
