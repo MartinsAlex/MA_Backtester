@@ -505,6 +505,12 @@ results, transactions, fig = MA_CROSS(["AMZN"], 20, 50, "2014-01-01", "2016-01-0
   </tbody>
 </table>
 
+```python
+
+plt.show()
+
+```
+
 
 
 
