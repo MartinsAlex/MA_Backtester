@@ -340,7 +340,6 @@ plt.show()
 
 ![png](readme_files/Figure_1.png)
 
-Activez l'intéraction graphique pour une meilleure expérience.
 
 
 &nbsp;
