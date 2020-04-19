@@ -24,11 +24,11 @@
 - Prise de position short et long
 
 ```python
-    from MA_Backtester import MA_CROSS
-    import matplotlib.pyplot as plt
-    
-    stats, transactions, fig = MA_CROSS(["CS"], 50, 200, "2000-01-01", "2010-01-01", 
-                                      ma="simple", showplot=True, shortLong="both", capital=10_000)
+from MA_Backtester import MA_CROSS
+import matplotlib.pyplot as plt
+
+stats, transactions, fig = MA_CROSS(["CS"], 50, 200, "2000-01-01", "2010-01-01", 
+                                  ma="simple", showplot=True, shortLong="both", capital=10_000)
     
 ```
 Les différents arguments sont expliqués dans la doc. Concernant les tickers, tout ceux de Yahoo Finance peuvent être utilisés ainsi que ceux de FRED (forex).
@@ -38,7 +38,7 @@ La fonction retourne deux tables pandas et une figure matplotlib. La première t
 
 ```python
 
-    stats
+stats
 
 ```
 <table border="1" class="dataframe">
@@ -120,7 +120,7 @@ La fonction retourne deux tables pandas et une figure matplotlib. La première t
 
 ```python
 
-    transactions
+transactions
 
 ```
 <table border="1" class="dataframe">
@@ -600,6 +600,13 @@ plt.show()
 ```
 ![png](readme_files/Figure_2.png)
 
+&nbsp;
+## Example 3 :
 
+#### Action Amazon, de 2018 à 2019. Stratégie basée sur le croisement des moyennes mobiles pondérées de 20 et 50 jours. 
+- Capital initial : 1'000'000 USD 
+- Prise de position long only
+- Stop-loss : 5 %
+- Take-Profit : 10 %
 
 
