@@ -441,6 +441,11 @@ stats
   </tbody>
 </table>
 
+```python
+
+transactions
+
+```
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
