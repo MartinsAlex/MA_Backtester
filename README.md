@@ -254,6 +254,8 @@ plt.show()
 
 Activez l'intéraction graphique pour une meilleure expérience.
 
+
+&nbsp;
 ## Example 2 :
 
 #### Action Amazon, de 2018 à 2019. Stratégie basée sur le croisement des moyennes mobiles pondérées de 20 et 50 jours. 
