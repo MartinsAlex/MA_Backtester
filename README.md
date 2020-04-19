@@ -3,7 +3,7 @@
 # MA_Backtester
 ## Un module permettant le backtesting de stratégies de trading, basées sur le croisement de moyennes mobiles
 
-
+&nbsp;
 
 # Contenu de la page :
 
