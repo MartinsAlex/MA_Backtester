@@ -830,6 +830,12 @@ transactions
   </tbody>
 </table>
 
+```python
 
+plt.show()
+
+```
+
+![png](readme_files/Figure_3.png)
 
 
