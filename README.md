@@ -510,7 +510,7 @@ results, transactions, fig = MA_CROSS(["AMZN"], 20, 50, "2014-01-01", "2016-01-0
 plt.show()
 
 ```
-
+![png](readme_files/Figure_2.png)
 
 
 
