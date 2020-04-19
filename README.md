@@ -13,7 +13,7 @@
 - Documentation : fichier d'aide pour les fonction (..)
 - [Examples](https://github.com/MartinsAlex/Backtesting/tree/master/Examples) : quelques examples d'utilisation
 
-
+&nbsp;
 
 # Utilisation :
 
