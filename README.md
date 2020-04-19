@@ -375,7 +375,7 @@ results, transactions, fig = MA_CROSS(["AMZN"], 20, 50, "2014-01-01", "2016-01-0
     <tr>
       <th>1</th>
       <td>2014-03-24</td>
-      <td>Stop Loss Long</td>
+      <td>Stop-Loss Long</td>
       <td>351.850006</td>
       <td>AMZN</td>
       <td>-23.190002</td>
@@ -395,7 +395,7 @@ results, transactions, fig = MA_CROSS(["AMZN"], 20, 50, "2014-01-01", "2016-01-0
     <tr>
       <th>3</th>
       <td>2014-07-31</td>
-      <td>Stop Loss Long</td>
+      <td>Stop-Loss Long</td>
       <td>312.989990</td>
       <td>AMZN</td>
       <td>-16.680023</td>
@@ -435,7 +435,7 @@ results, transactions, fig = MA_CROSS(["AMZN"], 20, 50, "2014-01-01", "2016-01-0
     <tr>
       <th>7</th>
       <td>2014-12-08</td>
-      <td>Stop Loss Long</td>
+      <td>Stop-Loss Long</td>
       <td>306.640015</td>
       <td>AMZN</td>
       <td>-19.899994</td>
@@ -475,7 +475,7 @@ results, transactions, fig = MA_CROSS(["AMZN"], 20, 50, "2014-01-01", "2016-01-0
     <tr>
       <th>11</th>
       <td>2015-04-24</td>
-      <td>Stop Gain Long</td>
+      <td>Take-Profit Long</td>
       <td>445.100006</td>
       <td>AMZN</td>
       <td>62.740021</td>
@@ -495,7 +495,7 @@ results, transactions, fig = MA_CROSS(["AMZN"], 20, 50, "2014-01-01", "2016-01-0
     <tr>
       <th>13</th>
       <td>2015-09-28</td>
-      <td>Stop Loss Long</td>
+      <td>Stop-Loss Long</td>
       <td>504.059998</td>
       <td>AMZN</td>
       <td>-34.809998</td>
