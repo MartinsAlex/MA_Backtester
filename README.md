@@ -603,10 +603,95 @@ plt.show()
 &nbsp;
 ## Example 3 :
 
-#### Action Amazon, de 2018 à 2019. Stratégie basée sur le croisement des moyennes mobiles pondérées de 20 et 50 jours. 
-- Capital initial : 1'000'000 USD 
-- Prise de position long only
-- Stop-loss : 5 %
-- Take-Profit : 10 %
+#### Bitcoin, septembre 2017 à juin 2018. Stratégie basée sur le croisement des moyennes mobiles exponentielles de 8 et 13 jours. 
+- Capital initial : 100'000 USD 
+- Prise de position long
+
+```python
+
+results, transactions, fig = MA_CROSS(["BTC-USD"], 8, 13, "2017-09-01", "2018-07-01", 
+                                      ma="exp", showplot=True, shortLong="long", capital=100_000)
+                                      
+```
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>From</th>
+      <th>To</th>
+      <th>Ticker</th>
+      <th>Number of Trades</th>
+      <th>Winning Trades</th>
+      <th>Losing Trades</th>
+      <th>Largest Winning Trade</th>
+      <th>Largest Losing Trade</th>
+      <th>% Profitable</th>
+      <th>Expectancy</th>
+      <th>Total Realized Return</th>
+      <th>Buy &amp; Hold Return</th>
+      <th>Asset Return %</th>
+      <th>Strategy Return %</th>
+      <th>Strategy Max Drawdown</th>
+      <th>Asset Max Drawdown</th>
+      <th>Open position</th>
+      <th>Open Trade P/L</th>
+      <th>Total Return</th>
+      <th>Strategy Annualized Volatility</th>
+      <th>Asset Annualized Volatility</th>
+      <th>Used Stop-Loss</th>
+      <th>Used Take-Profit</th>
+      <th>Asset Sharpe Ratio</th>
+      <th>Market Exposure</th>
+      <th>Strategy Sharpe Ratio</th>
+      <th>Asset Daily Avg Volume</th>
+      <th>Avg Holding Days</th>
+      <th>Initial Capital</th>
+      <th>Final Capital</th>
+      <th>Asset Annualized Return %</th>
+      <th>Strategy Annualized Return %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>2017-08-31</td>
+      <td>2018-07-01</td>
+      <td>BTC-USD</td>
+      <td>5</td>
+      <td>3</td>
+      <td>2</td>
+      <td>7383.66</td>
+      <td>-4023.7</td>
+      <td>0.6</td>
+      <td>968.388</td>
+      <td>114540</td>
+      <td>35203.7</td>
+      <td>0.352037</td>
+      <td>1.1454</td>
+      <td>-0.290582</td>
+      <td>-0.697219</td>
+      <td>0</td>
+      <td>0</td>
+      <td>114540</td>
+      <td>0.820805</td>
+      <td>0.868408</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.286721</td>
+      <td>0.44918</td>
+      <td>1.72643</td>
+      <td>6.68216e+09</td>
+      <td>27</td>
+      <td>100000</td>
+      <td>214540</td>
+      <td>0.283</td>
+      <td>0.878893</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
 
 
