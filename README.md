@@ -5,21 +5,12 @@
 
 &nbsp;
 
-md`
-* This is the first item in an unordered list
-* This is the second item in an unordered list
-* This is the third item in an unordered list
-  * This is the first subitem of the third item in the unordered list
-  * This is the second subitem of the third item in the unordered list
-* This is the fourth item in an unordered list
-`
-
 # Sommaire :
 
 1 [Installation](https://github.com/MartinsAlex/Backtesting/tree/master/Algorithmes) : toutes les fonctions
 1 [Utilisation](https://github.com/MartinsAlex/Backtesting/tree/master/Strat%C3%A9gies) : exemples de stratégies analysées
-  * La fonction
-  * Examples
+  1 La fonction
+  1 Examples
 1 [Listes de tickers](https://github.com/MartinsAlex/Backtesting/tree/master/Listes%20de%20tickers) : fichiers csv contenant quelques tickers (symbol) pouvant être utilisés
 1 [Examples](https://github.com/MartinsAlex/Backtesting/tree/master/Examples) : quelques examples d'utilisation
 
