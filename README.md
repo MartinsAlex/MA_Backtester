@@ -14,6 +14,13 @@
 * [Listes de tickers](https://github.com/MartinsAlex/Backtesting/tree/master/Listes%20de%20tickers) : fichiers csv contenant quelques tickers (symbol) pouvant être utilisés
 * [Examples](https://github.com/MartinsAlex/Backtesting/tree/master/Examples) : quelques examples d'utilisation
 
+
+&nbsp;
+
+# Installation :
+
+
+
 &nbsp;
 
 # Utilisation :
