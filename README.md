@@ -35,6 +35,94 @@ Les différents arguments sont expliqués dans la doc. Concernant les tickers, t
 
 La fonction retourne deux tables pandas et une figure matplotlib. La première table contient différentes statistiques concernant la stratégie :
 
+
+```python
+
+    stats
+
+```
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>From</th>
+      <th>To</th>
+      <th>Ticker</th>
+      <th>Number of Trades</th>
+      <th>Winning Trades</th>
+      <th>Losing Trades</th>
+      <th>Largest Winning Trade</th>
+      <th>Largest Losing Trade</th>
+      <th>% Profitable</th>
+      <th>Expectancy</th>
+      <th>Total Realized Return</th>
+      <th>Buy &amp; Hold Return</th>
+      <th>Asset Return %</th>
+      <th>Strategy Return %</th>
+      <th>Strategy Max Drawdown</th>
+      <th>Asset Max Drawdown</th>
+      <th>Open position</th>
+      <th>Open Trade P/L</th>
+      <th>Total Return</th>
+      <th>Strategy Annualized Volatility</th>
+      <th>Asset Annualized Volatility</th>
+      <th>Used Stop-Loss</th>
+      <th>Used Take-Profit</th>
+      <th>Asset Sharpe Ratio</th>
+      <th>Market Exposure</th>
+      <th>Strategy Sharpe Ratio</th>
+      <th>Asset Daily Avg Volume</th>
+      <th>Avg Holding Days</th>
+      <th>Initial Capital</th>
+      <th>Final Capital</th>
+      <th>Asset Annualized Return %</th>
+      <th>Strategy Annualized Return %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>2000-01-03</td>
+      <td>2009-12-31</td>
+      <td>CS</td>
+      <td>9</td>
+      <td>6</td>
+      <td>3</td>
+      <td>5859</td>
+      <td>-2148.08</td>
+      <td>0.6667</td>
+      <td>3.49751</td>
+      <td>12994.8</td>
+      <td>2871.65</td>
+      <td>0.287165</td>
+      <td>1.29948</td>
+      <td>-0.550622</td>
+      <td>-0.74091</td>
+      <td>28.7958</td>
+      <td>3794.66</td>
+      <td>12999.6</td>
+      <td>0.47174</td>
+      <td>0.463312</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0523934</td>
+      <td>0.913718</td>
+      <td>0.0685191</td>
+      <td>483259</td>
+      <td>238</td>
+      <td>10000</td>
+      <td>22994.8</td>
+      <td>0.0256171</td>
+      <td>0.0870134</td>
+    </tr>
+  </tbody>
+</table>
+
+```python
+
+    transactions
+
+```
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
