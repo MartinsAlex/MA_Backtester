@@ -4,7 +4,7 @@
 
 [![Project Status: Concept – Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https://www.repostatus.org/#concept)
 
-![jpg](https://cdn.pixabay.com/photo/2015/11/15/07/47/geometry-1044090_960_720.jpg)
+![jpg](https://cdn.pixabay.com/photo/2015/11/15/07/47/geometry-1044090_960_720.jpg, "Test")
 
 # MA_Backtester
 #### Un script permettant le backtesting de stratégies de trading, basées sur le croisement de moyennes mobiles.
