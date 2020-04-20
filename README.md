@@ -8,8 +8,10 @@
 # MA_Backtester
 #### Un script permettant le backtesting de stratégies de trading, basées sur le croisement de moyennes mobiles.
 
- > Plus de 50'000 actions et près de 120 crypto-monnaies disponibles sur [Yahoo Finance](https://finance.yahoo.com/)
- > 35 monnaies côtées en USD, provenant de la [FRED](https://fred.stlouisfed.org)
+>Plus de 50'000 actions et près de 120 crypto-monnaies disponibles sur [Yahoo Finance](https://finance.yahoo.com/)
+>35 monnaies côtées en USD, provenant de la [FRED](https://fred.stlouisfed.org)
+ 
+ 
 &nbsp;
 
 
