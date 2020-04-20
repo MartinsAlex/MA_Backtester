@@ -5,7 +5,7 @@
 
 &nbsp;
 
-# Sommaire :
+## Sommaire :
 
 1. [Installation](https://github.com/MartinsAlex/Backtesting/tree/master/Algorithmes) : toutes les fonctions
 1. [Utilisation](https://github.com/MartinsAlex/Backtesting/tree/master/Strat%C3%A9gies) : exemples de stratégies analysées
@@ -17,7 +17,7 @@
 
 &nbsp;
 
-# Installation :
+## Installation :
 
 ```python
 
@@ -28,11 +28,11 @@ pip install ....
 
 &nbsp;
 
-# Utilisation :
+## Utilisation :
 
-## Example 1 : Crédit Suisse
+### Example 1 : Crédit Suisse
 
-#### Action Crédit Suisse, 2002 à 2010. Stratégie basée sur le croisement des moyennes mobiles simples de 50 et 200 jours. 
+##### Action Crédit Suisse, 2002 à 2010. Stratégie basée sur le croisement des moyennes mobiles simples de 50 et 200 jours. 
 - Capital initial : 10'000 USD 
 - Prise de position short et long
 
@@ -356,9 +356,9 @@ plt.show()
 
 
 &nbsp;
-## Example 2 :
+### Example 2 :
 
-#### Action Amazon, de 2018 à 2019. Stratégie basée sur le croisement des moyennes mobiles pondérées de 20 et 50 jours. 
+##### Action Amazon, de 2018 à 2019. Stratégie basée sur le croisement des moyennes mobiles pondérées de 20 et 50 jours. 
 - Capital initial : 1'000'000 USD 
 - Prise de position long only
 - Stop-loss : 5 %
@@ -623,9 +623,9 @@ plt.show()
 ![png](readme_files/Figure_2.png)
 
 &nbsp;
-## Example 3 :
+### Example 3 :
 
-#### Bitcoin, septembre 2017 à juin 2018. Stratégie basée sur le croisement des moyennes mobiles exponentielles de 8 et 13 jours. 
+##### Bitcoin, septembre 2017 à juin 2018. Stratégie basée sur le croisement des moyennes mobiles exponentielles de 8 et 13 jours. 
 - Capital initial : 100'000 USD 
 - Prise de position long
 
@@ -852,9 +852,9 @@ plt.show()
 
 
 &nbsp;
-## Example 4 :
+### Example 4 :
 
-#### Analyse de 5 devises...
+##### Analyse de 5 devises...
 - Capital initial : 100'000 USD 
 - Prise de position long
 
