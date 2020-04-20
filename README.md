@@ -6,7 +6,10 @@
 
 
 # MA_Backtester
-#### Un script permettant le backtesting de stratégies de trading, basées sur le croisement de moyennes mobiles sur près 
+#### Un script permettant le backtesting de stratégies de trading, basées sur le croisement de moyennes mobiles.
+- + de 50'000 actions
+- 35 monnaies côtées en USD
+- + de 100 crypto-monnaies
 
 &nbsp;
 
