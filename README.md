@@ -26,7 +26,9 @@ pip install ....
 ```
 ### Requirements :
 
-...
+- Matplotlib
+- Pandas
+- Numpy
 
 
 &nbsp;
