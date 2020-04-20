@@ -49,9 +49,9 @@ pip install ....
 # Utilisation
 
 ## La fonction et ses arguments
-
+&nbsp;
 ## Les tickers utilisables
-
+&nbsp;
 ## Examples
 
 ### Example 1 : Crédit Suisse
