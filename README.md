@@ -5,7 +5,7 @@
 
 &nbsp;
 
-# Sommaire :
+# Sommaire
 
 1. [Installation](https://github.com/MartinsAlex/Backtesting/tree/master/Algorithmes) : toutes les fonctions
 1. [Utilisation](https://github.com/MartinsAlex/Backtesting/tree/master/Strat%C3%A9gies) : exemples de stratégies analysées
@@ -17,7 +17,7 @@
 
 &nbsp;
 
-# Installation :
+# Installation
 
 ```python
 
@@ -28,7 +28,7 @@ pip install ....
 
 &nbsp;
 
-# Utilisation :
+# Utilisation
 
 ### Example 1 : Crédit Suisse
 
