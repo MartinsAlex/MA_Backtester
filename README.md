@@ -5,7 +5,7 @@
 
 &nbsp;
 
-## Sommaire :
+# Sommaire :
 
 1. [Installation](https://github.com/MartinsAlex/Backtesting/tree/master/Algorithmes) : toutes les fonctions
 1. [Utilisation](https://github.com/MartinsAlex/Backtesting/tree/master/Strat%C3%A9gies) : exemples de stratégies analysées
@@ -17,7 +17,7 @@
 
 &nbsp;
 
-## Installation :
+# Installation :
 
 ```python
 
@@ -28,11 +28,11 @@ pip install ....
 
 &nbsp;
 
-## Utilisation :
+# Utilisation :
 
 ### Example 1 : Crédit Suisse
 
-##### Action Crédit Suisse, 2002 à 2010. Stratégie basée sur le croisement des moyennes mobiles simples de 50 et 200 jours. 
+#### Action Crédit Suisse, 2002 à 2010. Stratégie basée sur le croisement des moyennes mobiles simples de 50 et 200 jours. 
 - Capital initial : 10'000 USD 
 - Prise de position short et long
 
