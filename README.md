@@ -21,10 +21,9 @@
 
 1. [Installation](https://github.com/MartinsAlex/MA_Backtester/blob/master/README.md#installation)
 1. [Utilisation](https://github.com/MartinsAlex/MA_Backtester/blob/master/README.md#utilisation)
-    * La fonction et ses arguments
-    * Les tickers utilisables
-    * Examples
-1. [Listes de tickers](https://github.com/MartinsAlex/Backtesting/tree/master/Listes%20de%20tickers) : fichiers csv contenant quelques tickers (symbol) pouvant être utilisés
+    1. La fonction et ses arguments
+    2. Les tickers utilisables
+    3. Examples
 1. Stratégies analysées
 
 
