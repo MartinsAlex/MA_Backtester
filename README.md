@@ -19,8 +19,8 @@
 
 # Sommaire
 
-1. [Installation](https://github.com/MartinsAlex/Backtesting/tree/master/Algorithmes)
-1. [Utilisation](https://github.com/MartinsAlex/Backtesting/tree/master/Strat%C3%A9gies)
+1. [Installation](https://github.com/MartinsAlex/MA_Backtester/blob/master/README.md#installation)
+1. [Utilisation](https://github.com/MartinsAlex/MA_Backtester/blob/master/README.md#utilisation)
     * La fonction et ses arguments
     * Les tickers utilisables
     * Examples
