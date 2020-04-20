@@ -884,6 +884,6 @@ stats, transactions, fig = MA_CROSS(tickerList, 8, 13, "2017-09-01", "2018-07-01
                                       
 ```
 
-
+![jpg](https://catanacapital.com/wp-content/uploads/2019/03/Mathematical_Concept-780x438.jpg)
 
 
