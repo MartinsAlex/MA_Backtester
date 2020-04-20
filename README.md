@@ -48,6 +48,12 @@ pip install ....
 
 # Utilisation
 
+## - La fonction et ses arguments
+
+## Les tickers utilisables
+
+## Examples
+
 ### Example 1 : Crédit Suisse
 
 #### Action Crédit Suisse, 2002 à 2010. Stratégie basée sur le croisement des moyennes mobiles simples de 50 et 200 jours. 
