@@ -24,6 +24,9 @@
 pip install ....
     
 ```
+### Requirements :
+
+...
 
 
 &nbsp;
