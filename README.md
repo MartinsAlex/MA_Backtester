@@ -9,7 +9,7 @@
 
 1. [Installation](https://github.com/MartinsAlex/Backtesting/tree/master/Algorithmes) : toutes les fonctions
 1. [Utilisation](https://github.com/MartinsAlex/Backtesting/tree/master/Strat%C3%A9gies) : exemples de stratégies analysées
-    * La fonction
+    * La fonction et ses arguments
     * Examples
 1. [Listes de tickers](https://github.com/MartinsAlex/Backtesting/tree/master/Listes%20de%20tickers) : fichiers csv contenant quelques tickers (symbol) pouvant être utilisés
 1. [Examples](https://github.com/MartinsAlex/Backtesting/tree/master/Examples) : quelques examples d'utilisation
