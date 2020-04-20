@@ -24,7 +24,7 @@
 pip install ....
     
 ```
-### Requirements :
+### Exigences :
 
 - Matplotlib
 - Pandas
