@@ -48,7 +48,7 @@ pip install ....
 
 # Utilisation
 
-## - La fonction et ses arguments
+## La fonction et ses arguments
 
 ## Les tickers utilisables
 
