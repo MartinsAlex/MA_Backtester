@@ -3,7 +3,7 @@
 [![Project Status: Concept – Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https://www.repostatus.org/#concept)
    
 # MA_Backtester
-#### Un module permettant le backtesting de stratégies de trading, basées sur le croisement de moyennes mobiles
+##### **Un module permettant le backtesting de stratégies de trading, basées sur le croisement de moyennes mobiles**
 
 &nbsp;
 
@@ -15,6 +15,7 @@
     * Examples
 1. [Listes de tickers](https://github.com/MartinsAlex/Backtesting/tree/master/Listes%20de%20tickers) : fichiers csv contenant quelques tickers (symbol) pouvant être utilisés
 1. [Examples](https://github.com/MartinsAlex/Backtesting/tree/master/Examples) : quelques examples d'utilisation
+1. Stratégies analysées
 
 
 &nbsp;
