@@ -21,8 +21,11 @@
 
 1. [Installation](https://github.com/MartinsAlex/MA_Backtester/blob/master/README.md#installation)
 1. [Utilisation](https://github.com/MartinsAlex/MA_Backtester/blob/master/README.md#utilisation)
+&nbsp;
     1. La fonction et ses arguments
+&nbsp;
     2. Les tickers utilisables
+&nbsp;
     3. Examples
 1. Stratégies analysées
 
