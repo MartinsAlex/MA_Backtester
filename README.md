@@ -43,6 +43,7 @@ pip install ....
 - Matplotlib
 - Pandas
 - Numpy
+- pandas_datareader
 
 
 &nbsp;
