@@ -8,6 +8,6 @@ install:
   
 # command to run tests
 script:
-  - python MCF.py
+  - python moduleTester.py
 
 
