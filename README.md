@@ -10,7 +10,7 @@
 
 
 
->- Près de 100'000 actions et 120 crypto-monnaies disponibles sur [Yahoo Finance](https://finance.yahoo.com/)
+>- Accès à près de 100'000 actions et 120 crypto-monnaies provenant de [Yahoo Finance](https://finance.yahoo.com/)
 >
 >- 35 monnaies cotées en USD, provenant de la [FRED](https://fred.stlouisfed.org)
 
