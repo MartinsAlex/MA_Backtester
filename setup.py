@@ -1,15 +1,12 @@
 from setuptools import setup
 
 setup(
-   name='foo',
-   version='1.0',
-   description='A useful module',
-   author='Man Foo',
-   author_email='foomail@foo.com',
-   packages=['scripts'],  #same as name
-   package_dir=['scripts'],  #same as name
-   install_requires=['matplotlib', 'pandas', "numpy", "pandas-datareader"], #external packages as dependencies
-   scripts=[
-            'MA_Backtester.py'
-           ]
+    name='backesting',
+    version='1.0',
+    packages=['MA_Backtester'],
+    url='',
+    license='mit',
+    author='Alex',
+    author_email='',
+    description=''
 )
