@@ -53,9 +53,9 @@ pip install ....
 ```
 ### Modules exigés :
 
-- Matplotlib
-- Pandas
-- Numpy
+- matplotlib
+- pandas
+- numpy
 - pandas_datareader
 
 
