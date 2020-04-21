@@ -9,6 +9,6 @@ setup(
    packages=['scripts'],  #same as name
    install_requires=['matplotlib', 'pandas', "numpy", "pandas-datareader"], #external packages as dependencies
    scripts=[
-            'MA_Backtester.py'
+            'MA_Backtester'
            ]
 )
