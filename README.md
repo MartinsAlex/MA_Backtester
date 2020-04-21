@@ -20,7 +20,7 @@
 
  
 > ## *“What has happened in the past will happen again. This is because Markets are driven by humans and human nature never changes.”* 
->> Jesse Livermore
+>> [Jesse Lauriston Livermore](https://en.wikipedia.org/wiki/Jesse_Lauriston_Livermore)
 
 
 <p>&nbsp;</p>
