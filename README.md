@@ -11,10 +11,10 @@
 
 
 - Accès à près de :
- * 100'000 actions
- * 120 crypto-monnaies
- * 35 monnaies cotées en USD
- * Nombreux autres actifs tels que des indices, futures, ETFs
+  * 100'000 actions
+  * 120 crypto-monnaies
+  * 35 monnaies cotées en USD
+  * Nombreux autres actifs tels que des indices, futures, ETFs
 
 
 <p>&nbsp;</p>
