@@ -6,9 +6,10 @@ setup(
    description='A useful module',
    author='Man Foo',
    author_email='foomail@foo.com',
-   packages=['master'],  #same as name
+   packages=['scripts'],  #same as name
+   package_dir=['scripts'],  #same as name
    install_requires=['matplotlib', 'pandas', "numpy", "pandas-datareader"], #external packages as dependencies
    scripts=[
-            'scripts/MA_Backtester.py'
+            'MA_Backtester.py'
            ]
 )
