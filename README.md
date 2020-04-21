@@ -1,8 +1,3 @@
-
-> #### *“What has happened in the past will happen again. This is because Markets are driven by humans and human nature never changes.”*
-> #### Jesse Livermore
-
-
 ![gif](readme_files/codeGif.gif)
 
 [![Build Status](https://travis-ci.com/MartinsAlex/MA_Backtester.svg?branch=master)](https://travis-ci.com/MartinsAlex/MA_Backtester)<space><space>
@@ -18,6 +13,12 @@
 >
 >- 35 monnaies cotées en USD, provenant de la [FRED](https://fred.stlouisfed.org)
  
+&nbsp;
+
+
+> #### *“What has happened in the past will happen again. This is because Markets are driven by humans and human nature never changes.”*
+> #### Jesse Livermore
+
  
 &nbsp;
 
