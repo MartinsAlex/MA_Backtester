@@ -48,7 +48,7 @@
 
 ```python
 
-pip install ....
+pip install https://github.com/MartinsAlex/MA_Backtester/archive/master.zip
     
 ```
 ### Modules exigés :
