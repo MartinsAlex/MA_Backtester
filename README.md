@@ -5,6 +5,7 @@
 [![Project Status: Concept – Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https://www.repostatus.org/#concept)
 
 &nbsp;
+&nbsp;
 
 # MA_Backtester
 #### Un script permettant le backtesting de stratégies de trading, basées sur le croisement de moyennes mobiles.
@@ -14,7 +15,7 @@
 >- 35 monnaies cotées en USD, provenant de la [FRED](https://fred.stlouisfed.org)
  
 &nbsp;
-
+&nbsp;
 
  
 ### *“What has happened in the past will happen again. This is because Markets are driven by humans and human nature never changes.”*
