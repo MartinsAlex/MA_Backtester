@@ -5,8 +5,8 @@
 [![Project Status: Concept – Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https://www.repostatus.org/#concept)
 
 
-# MA_Backtester
-#### Un script permettant le backtesting de stratégies de trading, basées sur le croisement de moyennes mobiles.
+# 
+#### **MA_Backtester** est un module permettant le backtesting de stratégies de trading, basées sur le croisement de moyennes mobiles.
 
 >- Près de 100'000 actions et 120 crypto-monnaies disponibles sur [Yahoo Finance](https://finance.yahoo.com/)
 >
