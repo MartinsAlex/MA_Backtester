@@ -56,7 +56,7 @@ pip install https://github.com/MartinsAlex/MA_Backtester/archive/master.zip
 - matplotlib
 - pandas
 - numpy
-- pandas_datareader
+- pandas-datareader
 
 
 &nbsp;
