@@ -80,7 +80,7 @@ pip install https://github.com/MartinsAlex/MA_Backtester/archive/master.zip
 import MA_Backtester as mb
 
 
-stats = mb.movingAverageCrossover(["CS"], 50, 200, "2000-01-01", "2010-01-01", 
+creditSuisseStrat = mb.movingAverageCrossover(["CS"], 50, 200, "2000-01-01", "2010-01-01", 
                                    maType="simple", showplot=True, shortLong="both", capital=10_000)
     
 ```
@@ -91,7 +91,7 @@ La fonction retourne deux tables pandas et une figure matplotlib. La première t
 
 ```python
 
-stats.resultsTable
+creditSuisseStrat.resultsTable
 
 ```
 <table border="1" class="dataframe">
@@ -173,7 +173,7 @@ stats.resultsTable
 
 ```python
 
-stats.transactionTable
+creditSuisseStrat.transactionTable
 
 ```
 <table border="1" class="dataframe">
@@ -387,7 +387,7 @@ Le dernier élément retourné est un graphique, si l'argument showplot est "Tru
 
 ```python
 
-stats.showPlot()
+creditSuisseStrat.showPlot()
 
 ```
 
