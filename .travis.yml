@@ -8,6 +8,6 @@ install:
   
 # command to run tests
 script:
-  - python script/moduleTester.py
+  - python moduleTester.py
 
 
