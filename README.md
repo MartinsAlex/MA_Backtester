@@ -8,7 +8,7 @@
 
 # MA_Backtester
 
-### Un module fintech se voulant simple et intuitif tout en restant puissant. Il permet de tester la performance historique de stratégies de trading systématique, basées sur le croisement de moyenne mobile.
+### Un module fintech se voulant simple et intuitif, mais puissant. Il permet de tester la performance historique de stratégies de trading systématique, basées sur le croisement de moyenne mobile.
 
 
 ### Il est utilisable sur près de :
