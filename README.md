@@ -16,7 +16,7 @@
 * 100'000 actions
 * 120 crypto-monnaies
 * 35 monnaies cotées en USD
-* Nombreux autres actifs tels que des indices, futures, ETFs
+* Nombreux autres actifs tels que des indices, futures et ETFs
 
 
 
