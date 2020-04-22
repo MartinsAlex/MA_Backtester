@@ -76,11 +76,12 @@ pip install https://github.com/MartinsAlex/MA_Backtester/archive/master.zip
 - Prise de position short et long
 
 ```python
-from MA_Backtester import MA_CROSS
-import matplotlib.pyplot as plt
 
-stats, transactions, fig = MA_CROSS(["CS"], 50, 200, "2000-01-01", "2010-01-01", 
-                                  ma="simple", showplot=True, shortLong="both", capital=10_000)
+import MA_Backtester as mb
+
+
+stats = mb.movingAverageCrossover(["CS"], 50, 200, "2000-01-01", "2010-01-01", 
+                                   maType="simple", showplot=True, shortLong="both", capital=10_000)
     
 ```
 Les différents arguments sont expliqués dans la doc. Concernant les tickers, tout ceux de Yahoo Finance peuvent être utilisés ainsi que ceux de FRED (forex).
@@ -90,7 +91,7 @@ La fonction retourne deux tables pandas et une figure matplotlib. La première t
 
 ```python
 
-stats
+stats.resultsTable
 
 ```
 <table border="1" class="dataframe">
@@ -172,7 +173,7 @@ stats
 
 ```python
 
-transactions
+stats.transactionTable
 
 ```
 <table border="1" class="dataframe">
@@ -386,7 +387,7 @@ Le dernier élément retourné est un graphique, si l'argument showplot est "Tru
 
 ```python
 
-plt.show()
+stats.showPlot()
 
 ```
 
