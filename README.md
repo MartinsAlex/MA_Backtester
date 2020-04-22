@@ -657,7 +657,7 @@ amazonStrat.transactionTable
 
 ```python
 
-plt.show()
+amazonStrat.showPlot()
 
 ```
 ![png](readme_files/Figure_2.png)
