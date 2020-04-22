@@ -406,14 +406,14 @@ stats.showPlot()
 
 ```python
 
-stats, transactions, fig = MA_CROSS(["AMZN"], 20, 50, "2014-01-01", "2016-01-01", 
-                                      ma="weighted", showplot=True, shortLong="long", capital=1_000_000,
+amazonStrat = mab.movingAverageCrossover(["AMZN"], 20, 50, "2014-01-01", "2016-01-01", 
+                                      maType="weighted", showplot=True, shortLong="long", capital=1_000_000,
                                      stopLoss=0.05, takeProfit=0.1)
 ```
 
 ```python
 
-stats
+amazonStrat.resultsTable
 
 ```
 <table border="1" class="dataframe">
@@ -495,7 +495,7 @@ stats
 
 ```python
 
-transactions
+amazonStrat.transactionTable
 
 ```
 <table border="1" class="dataframe">
