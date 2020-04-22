@@ -1,4 +1,4 @@
-# This code is still in development and will be available in english soon.
+# This code is still in development and docs will be available in english soon.
 
 ![gif](readme_files/codeGif.gif)
 
