@@ -63,7 +63,7 @@ pip install https://github.com/MartinsAlex/MA_Backtester/archive/master.zip
 
 # Utilisation
 
-## La fonction et ses arguments
+## Arguments et méthodes
 &nbsp;
 ## Les tickers utilisables
 &nbsp;
