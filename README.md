@@ -664,6 +664,9 @@ amazonStrat.showPlot()
 ```
 ![png](readme_files/Figure_2.png)
 
+--------
+
+
 &nbsp;
 ### Example 3 :
 
