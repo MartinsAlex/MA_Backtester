@@ -1,3 +1,5 @@
+# This code is still in development and will be available in english soon.
+
 ![gif](readme_files/codeGif.gif)
 
 [![Build Status](https://travis-ci.com/MartinsAlex/MA_Backtester.svg?branch=master)](https://travis-ci.com/MartinsAlex/MA_Backtester)<space><space>
