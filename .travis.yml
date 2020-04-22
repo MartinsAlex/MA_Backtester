@@ -8,6 +8,6 @@ install:
   
 # command to run tests
 script:
-  - python scripts/moduleTester.py
+  - python MA_Backtester/analyzer.py
 
 
