@@ -72,7 +72,6 @@ pip install https://github.com/MartinsAlex/MA_Backtester/archive/master.zip
 &nbsp;
 ## Les tickers utilisables
 &nbsp;
-## Examples
 
 ## Example 1 : SPDR S&P 500 Trust ETF
 
