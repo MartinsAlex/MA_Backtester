@@ -74,12 +74,11 @@ pip install https://github.com/MartinsAlex/MA_Backtester/archive/master.zip
 &nbsp;
 ## Examples
 
-### Example 1 : Crédit Suisse
+## Example 1 : SPDR S&P 500 Trust ETF
 
-#### Action Crédit Suisse, 2002 à 2010. Stratégie basée sur le croisement des moyennes mobiles simples de 50 et 200 jours. 
+#### January 2018 to may 2020. Stratégie basée sur le croisement des moyennes mobiles simples de 50 et 200 jours. 
 - Capital initial : 10'000 USD 
 - Prise de position short et long
-- Absence de frais de transactions
 
 ```python
 
@@ -87,13 +86,15 @@ import MA_Backtester as mb
 import matplotlib.pyplot as plt
 
 
-creditSuisseStrat = mb.movingAverageCrossover(["CS"], 50, 200, "2002-01-01", "2010-01-01", 
+spyStrat = mb.movingAverageCrossover(["SPY"], 50, 200, "2018-01-01", "2020-05-01", 
                                    maType="simple", plot=True, shortLong="both", balance=10_000)
 
-creditSuisseStrat.analyse()
+spyStrat.analyse()
+
 
 plt.show()
-    
+
+
 ```
 
 ![png](readme_files/Figure1.png)
