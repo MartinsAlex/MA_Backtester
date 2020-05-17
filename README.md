@@ -79,6 +79,7 @@ pip install https://github.com/MartinsAlex/MA_Backtester/archive/master.zip
 #### January 2018 to may 2020. Stratégie basée sur le croisement des moyennes mobiles simples de 50 et 200 jours. 
 - Capital initial : 10'000 USD 
 - Prise de position short et long
+- Absence de frais de transactions
 
 ```python
 
