@@ -94,6 +94,9 @@ strategy.analyse()
 plt.show()
     
 ```
+
+![png](readme_files/Figure1.png)
+
 Les différents arguments sont expliqués dans la doc. Concernant les tickers, tout ceux de Yahoo Finance peuvent être utilisés ainsi que ceux de FRED (forex).
 
 La fonction retourne deux tables pandas et une figure matplotlib. La première table contient différentes statistiques concernant la stratégie :
@@ -400,8 +403,6 @@ Le dernier élément retourné est un graphique, si l'argument showplot est "Tru
 creditSuisseStrat.showPlot()
 
 ```
-
-![png](readme_files/Figure_1.png)
 
 --------
 
