@@ -119,67 +119,73 @@ creditSuisseStrat.resultsTable
       <th>Losing Trades</th>
       <th>Largest Winning Trade</th>
       <th>Largest Losing Trade</th>
-      <th>% Profitable</th>
+      <th>Win Rate</th>
       <th>Expectancy</th>
       <th>Total Realized Return</th>
+      <th>Total Return</th>
       <th>Buy &amp; Hold Return</th>
       <th>Asset Return %</th>
-      <th>Strategy Return %</th>
-      <th>Strategy Max Drawdown</th>
-      <th>Asset Max Drawdown</th>
-      <th>Open position</th>
+      <th>Strategy Realized Return %</th>
+      <th>Over/Under-performance %</th>
+      <th>Asset Annualized Return %</th>
+      <th>Strategy Annualized Return %</th>
+      <th>Open position (price)</th>
       <th>Open Trade P/L</th>
-      <th>Total Return</th>
-      <th>Strategy Annualized Volatility</th>
       <th>Asset Annualized Volatility</th>
-      <th>Used Stop-Loss</th>
-      <th>Used Take-Profit</th>
+      <th>Strategy Annualized Volatility</th>
       <th>Asset Sharpe Ratio</th>
-      <th>Market Exposure</th>
       <th>Strategy Sharpe Ratio</th>
+      <th>Asset Max Drawdown</th>
+      <th>Strategy Max Drawdown</th>
+      <th>Market Exposure</th>
+      <th>Correlation with Hold &amp; Buy</th>
       <th>Asset Daily Avg Volume</th>
       <th>Avg Holding Days</th>
       <th>Initial Capital</th>
       <th>Final Capital</th>
-      <th>Asset Annualized Return %</th>
-      <th>Strategy Annualized Return %</th>
+      <th>Used Stop-Loss</th>
+      <th>Used Take-Profit</th>
+      <th>Total fees payed</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>1</th>
-      <td>2000-01-03</td>
+      <td>2002-01-02</td>
       <td>2009-12-31</td>
       <td>CS</td>
-      <td>9</td>
       <td>6</td>
-      <td>3</td>
-      <td>5859</td>
-      <td>-2148.08</td>
+      <td>4</td>
+      <td>2</td>
+      <td>599940</td>
+      <td>-220262</td>
       <td>0.6667</td>
-      <td>3.49751</td>
-      <td>12994.8</td>
-      <td>2871.65</td>
-      <td>0.287165</td>
-      <td>1.29948</td>
-      <td>-0.550622</td>
+      <td>5.24333</td>
+      <td>1.35575e+06</td>
+      <td>1.74428e+06</td>
+      <td>412927</td>
+      <td>0.412927</td>
+      <td>1.35575</td>
+      <td>0.942827</td>
+      <td>0.0441774</td>
+      <td>0.138118</td>
+      <td>28.2893</td>
+      <td>388529</td>
+      <td>0.48502</td>
+      <td>0.258394</td>
+      <td>0.0870497</td>
+      <td>0.485105</td>
       <td>-0.74091</td>
-      <td>28.7958</td>
-      <td>3794.66</td>
-      <td>12999.6</td>
-      <td>0.47174</td>
-      <td>0.463312</td>
+      <td>-0.315023</td>
+      <td>0.828288</td>
+      <td>-0.141762</td>
+      <td>598646</td>
+      <td>252</td>
+      <td>1000000</td>
+      <td>2.74428e+06</td>
       <td>0</td>
       <td>0</td>
-      <td>0.0523934</td>
-      <td>0.913718</td>
-      <td>0.0685191</td>
-      <td>483259</td>
-      <td>238</td>
-      <td>10000</td>
-      <td>22994.8</td>
-      <td>0.0256171</td>
-      <td>0.0870134</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
