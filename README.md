@@ -83,10 +83,15 @@ pip install https://github.com/MartinsAlex/MA_Backtester/archive/master.zip
 ```python
 
 import MA_Backtester as mb
+import matplotlib.pyplot as plt
 
 
-creditSuisseStrat = mb.movingAverageCrossover(["CS"], 50, 200, "2000-01-01", "2010-01-01", 
-                                   maType="simple", showplot=True, shortLong="both", capital=10_000)
+strategy = mb.movingAverageCrossover(["CS"], 50, 200, "2000-01-01", "2010-01-01", 
+                                   maType="simple", plot=True, shortLong="both", balance=10_000)
+
+strategy.analyse()
+
+plt.show()
     
 ```
 Les différents arguments sont expliqués dans la doc. Concernant les tickers, tout ceux de Yahoo Finance peuvent être utilisés ainsi que ceux de FRED (forex).
