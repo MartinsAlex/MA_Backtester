@@ -361,7 +361,7 @@ goldmanStrat.analyse()
 plt.show()
 
 ```
-
+![png](readme_files/Figure2.png)
 
 ```python
 
@@ -612,7 +612,7 @@ amazonStrat.transactionTable
 amazonStrat.showPlot()
 
 ```
-![png](readme_files/Figure_2.png)
+
 
 --------
 
