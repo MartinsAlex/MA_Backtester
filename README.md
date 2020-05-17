@@ -380,119 +380,6 @@ goldmanStrat.transactionTable
 
 ```
 
-```python
-
-amazonStrat.showPlot()
-
-```
-
-
---------
-
-
-&nbsp;
-### Example 3 :
-
-##### Bitcoin, septembre 2017 à juin 2018. Stratégie basée sur le croisement des moyennes mobiles exponentielles de 8 et 13 jours. 
-- Capital initial : 100'000 USD 
-- Prise de position long
-
-```python
-
-stats, transactions, fig = MA_CROSS(["BTC-USD"], 8, 13, "2017-09-01", "2018-07-01", 
-                                      ma="exp", showplot=True, shortLong="long", capital=100_000)
-                                      
-```
-
-```python
-
-stats
-
-```
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>From</th>
-      <th>To</th>
-      <th>Ticker</th>
-      <th>Number of Trades</th>
-      <th>Winning Trades</th>
-      <th>Losing Trades</th>
-      <th>Largest Winning Trade</th>
-      <th>Largest Losing Trade</th>
-      <th>% Profitable</th>
-      <th>Expectancy</th>
-      <th>Total Realized Return</th>
-      <th>Buy &amp; Hold Return</th>
-      <th>Asset Return %</th>
-      <th>Strategy Return %</th>
-      <th>Strategy Max Drawdown</th>
-      <th>Asset Max Drawdown</th>
-      <th>Open position</th>
-      <th>Open Trade P/L</th>
-      <th>Total Return</th>
-      <th>Strategy Annualized Volatility</th>
-      <th>Asset Annualized Volatility</th>
-      <th>Used Stop-Loss</th>
-      <th>Used Take-Profit</th>
-      <th>Asset Sharpe Ratio</th>
-      <th>Market Exposure</th>
-      <th>Strategy Sharpe Ratio</th>
-      <th>Asset Daily Avg Volume</th>
-      <th>Avg Holding Days</th>
-      <th>Initial Capital</th>
-      <th>Final Capital</th>
-      <th>Asset Annualized Return %</th>
-      <th>Strategy Annualized Return %</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td>2017-08-31</td>
-      <td>2018-07-01</td>
-      <td>BTC-USD</td>
-      <td>5</td>
-      <td>3</td>
-      <td>2</td>
-      <td>7383.66</td>
-      <td>-4023.7</td>
-      <td>0.6</td>
-      <td>968.388</td>
-      <td>114540</td>
-      <td>35203.7</td>
-      <td>0.352037</td>
-      <td>1.1454</td>
-      <td>-0.290582</td>
-      <td>-0.697219</td>
-      <td>0</td>
-      <td>0</td>
-      <td>114540</td>
-      <td>0.820805</td>
-      <td>0.868408</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0.286721</td>
-      <td>0.44918</td>
-      <td>1.72643</td>
-      <td>6.68216e+09</td>
-      <td>27</td>
-      <td>100000</td>
-      <td>214540</td>
-      <td>0.283</td>
-      <td>0.878893</td>
-    </tr>
-  </tbody>
-</table>
-
-```python
-
-transactions
-
-```
-
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -503,138 +390,204 @@ transactions
       <th>Ticker</th>
       <th>P/L</th>
       <th>Number of shares</th>
-      <th>Total P/L</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>2017-09-27</td>
+      <td>2017-06-19</td>
       <td>Buy Long</td>
-      <td>4174.729980</td>
-      <td>BTC-USD</td>
+      <td>215.806152</td>
+      <td>GS</td>
       <td>NaN</td>
-      <td>24</td>
-      <td>NaN</td>
+      <td>463</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2017-11-12</td>
+      <td>2017-08-24</td>
       <td>Sell Long</td>
-      <td>5950.069824</td>
-      <td>BTC-USD</td>
-      <td>1775.339844</td>
-      <td>24</td>
-      <td>42608.2</td>
+      <td>212.809494</td>
+      <td>GS</td>
+      <td>-2.996658</td>
+      <td>463</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2017-11-15</td>
+      <td>2017-09-19</td>
       <td>Buy Long</td>
-      <td>7315.540039</td>
-      <td>BTC-USD</td>
+      <td>219.205322</td>
+      <td>GS</td>
       <td>NaN</td>
-      <td>19</td>
-      <td>NaN</td>
+      <td>449</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>2017-12-23</td>
+      <td>2017-11-20</td>
       <td>Sell Long</td>
-      <td>14699.200195</td>
-      <td>BTC-USD</td>
-      <td>7383.660156</td>
-      <td>19</td>
-      <td>140290</td>
+      <td>228.034409</td>
+      <td>GS</td>
+      <td>8.829086</td>
+      <td>449</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>2018-01-05</td>
+      <td>2017-12-04</td>
       <td>Buy Long</td>
-      <td>17429.500000</td>
-      <td>BTC-USD</td>
+      <td>240.777908</td>
+      <td>GS</td>
       <td>NaN</td>
-      <td>16</td>
-      <td>NaN</td>
+      <td>425</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>2018-01-11</td>
+      <td>2018-03-26</td>
       <td>Sell Long</td>
-      <td>13405.799805</td>
-      <td>BTC-USD</td>
-      <td>-4023.700195</td>
-      <td>16</td>
-      <td>-64379.2</td>
+      <td>245.528625</td>
+      <td>GS</td>
+      <td>4.750717</td>
+      <td>425</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>2018-02-16</td>
+      <td>2018-07-24</td>
       <td>Buy Long</td>
-      <td>10233.900391</td>
-      <td>BTC-USD</td>
+      <td>228.029221</td>
+      <td>GS</td>
       <td>NaN</td>
-      <td>21</td>
-      <td>NaN</td>
+      <td>457</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>2018-03-08</td>
+      <td>2018-09-14</td>
       <td>Sell Long</td>
-      <td>9395.009766</td>
-      <td>BTC-USD</td>
-      <td>-838.890625</td>
-      <td>21</td>
-      <td>-17616.7</td>
+      <td>222.344147</td>
+      <td>GS</td>
+      <td>-5.685074</td>
+      <td>457</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>2018-04-12</td>
+      <td>2018-11-09</td>
       <td>Buy Long</td>
-      <td>7895.959961</td>
-      <td>BTC-USD</td>
+      <td>215.952362</td>
+      <td>GS</td>
       <td>NaN</td>
-      <td>25</td>
-      <td>NaN</td>
+      <td>470</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>2018-05-10</td>
+      <td>2018-11-12</td>
       <td>Sell Long</td>
-      <td>8441.490234</td>
-      <td>BTC-USD</td>
-      <td>545.530273</td>
-      <td>25</td>
-      <td>13638.3</td>
+      <td>199.851730</td>
+      <td>GS</td>
+      <td>-16.100632</td>
+      <td>470</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2019-01-18</td>
+      <td>Buy Long</td>
+      <td>197.242813</td>
+      <td>GS</td>
+      <td>NaN</td>
+      <td>476</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>2019-02-08</td>
+      <td>Stop-Loss Long</td>
+      <td>186.657135</td>
+      <td>GS</td>
+      <td>-10.585678</td>
+      <td>476</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>2019-04-05</td>
+      <td>Buy Long</td>
+      <td>197.882935</td>
+      <td>GS</td>
+      <td>NaN</td>
+      <td>448</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>2019-05-17</td>
+      <td>Sell Long</td>
+      <td>193.042908</td>
+      <td>GS</td>
+      <td>-4.840027</td>
+      <td>448</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>2019-06-27</td>
+      <td>Buy Long</td>
+      <td>195.769333</td>
+      <td>GS</td>
+      <td>NaN</td>
+      <td>442</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>2019-08-14</td>
+      <td>Sell Long</td>
+      <td>192.076294</td>
+      <td>GS</td>
+      <td>-3.693039</td>
+      <td>442</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>2019-09-12</td>
+      <td>Buy Long</td>
+      <td>216.191757</td>
+      <td>GS</td>
+      <td>NaN</td>
+      <td>392</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>2019-09-24</td>
+      <td>Stop-Loss Long</td>
+      <td>205.329773</td>
+      <td>GS</td>
+      <td>-10.861984</td>
+      <td>392</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>2019-10-28</td>
+      <td>Buy Long</td>
+      <td>215.213272</td>
+      <td>GS</td>
+      <td>NaN</td>
+      <td>373</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>2020-02-18</td>
+      <td>Sell Long</td>
+      <td>231.792770</td>
+      <td>GS</td>
+      <td>16.579498</td>
+      <td>373</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>2020-04-22</td>
+      <td>Buy Long</td>
+      <td>175.979996</td>
+      <td>GS</td>
+      <td>NaN</td>
+      <td>491</td>
     </tr>
   </tbody>
 </table>
 
-```python
-
-plt.show()
-
-```
-
-![png](readme_files/Figure_3.png)
-
+--------
 
 &nbsp;
-### Example 4 :
-
-##### Analyse de 5 devises...
-- Capital initial : 100'000 USD 
-- Prise de position long
-
-```python
-
-tickerList = [DEX.., ... , ...]
-
-stats, transactions, fig = MA_CROSS(tickerList, 8, 13, "2017-09-01", "2018-07-01", 
-                                      ma="exp", showplot=False, shortLong="long", capital=100_000)
-                                      
-```
-
 
 
 
