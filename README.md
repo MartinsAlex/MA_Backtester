@@ -86,7 +86,7 @@ import MA_Backtester as mb
 import matplotlib.pyplot as plt
 
 
-creditSuisseStrat = mb.movingAverageCrossover(["CS"], 50, 200, "2000-01-01", "2010-01-01", 
+creditSuisseStrat = mb.movingAverageCrossover(["CS"], 50, 200, "2002-01-01", "2010-01-01", 
                                    maType="simple", plot=True, shortLong="both", balance=10_000)
 
 creditSuisseStrat.analyse()
