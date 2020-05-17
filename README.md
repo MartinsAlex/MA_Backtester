@@ -342,24 +342,30 @@ creditSuisseStrat.showPlot()
 &nbsp;
 
 
-### Example 2 :
+## Example 2 : Goldman Sachs
 
-##### Action Amazon, de 2018 à 2019. Stratégie basée sur le croisement des moyennes mobiles pondérées de 20 et 50 jours. 
-- Capital initial : 1'000'000 USD 
+#### From january 2017 to may 2020. Stratégie basée sur le croisement des moyennes mobiles pondérées de 20 et 50 jours. 
+- Capital initial : 100'000 USD 
 - Prise de position long only
 - Stop-loss : 5 %
-- Take-Profit : 10 %
+- Commission : 0.1 %
+
 
 ```python
 
-amazonStrat = mab.movingAverageCrossover(["AMZN"], 20, 50, "2014-01-01", "2016-01-01", 
-                                      maType="weighted", showplot=True, shortLong="long", capital=1_000_000,
-                                     stopLoss=0.05, takeProfit=0.1)
+goldmanStrat = mb.movingAverageCrossover(["gs"], 20, 50, "2017-01-01", "2020-05-01", 
+                                      maType="weighted", plot=True, shortLong="long", capital=100_000,
+                                     stopLoss=0.05, commission=0.001)
+goldmanStrat.analyse()
+
+plt.show()
+
 ```
 
+
 ```python
 
-amazonStrat.resultsTable
+goldmanStrat.resultsTable
 
 ```
 <table border="1" class="dataframe">
