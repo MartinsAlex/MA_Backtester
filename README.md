@@ -589,5 +589,18 @@ goldmanStrat.transactionTable
 
 &nbsp;
 
+## Example 3 : Multiple asset analysis
+
+--------
+
+&nbsp;
+
+## Example 4 : Find the best moving averages
+
+--------
+
+&nbsp;
+
+
 
 
