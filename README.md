@@ -193,6 +193,8 @@ spyStrat.resultsTable
   </tbody>
 </table>
 
+La seconde, les transactions effectuées :
+
 ```python
 
 spyStrat.transactionTable
