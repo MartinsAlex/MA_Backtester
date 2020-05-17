@@ -304,232 +304,82 @@ goldmanStrat.resultsTable
       <th>Losing Trades</th>
       <th>Largest Winning Trade</th>
       <th>Largest Losing Trade</th>
-      <th>% Profitable</th>
+      <th>Win Rate</th>
       <th>Expectancy</th>
       <th>Total Realized Return</th>
+      <th>Total Return</th>
       <th>Buy &amp; Hold Return</th>
       <th>Asset Return %</th>
-      <th>Strategy Return %</th>
-      <th>Strategy Max Drawdown</th>
-      <th>Asset Max Drawdown</th>
-      <th>Open position</th>
+      <th>Strategy Realized Return %</th>
+      <th>Over/Under-performance %</th>
+      <th>Asset Annualized Return %</th>
+      <th>Strategy Annualized Return %</th>
+      <th>Open position (price)</th>
       <th>Open Trade P/L</th>
-      <th>Total Return</th>
-      <th>Strategy Annualized Volatility</th>
       <th>Asset Annualized Volatility</th>
-      <th>Used Stop-Loss</th>
-      <th>Used Take-Profit</th>
+      <th>Strategy Annualized Volatility</th>
       <th>Asset Sharpe Ratio</th>
-      <th>Market Exposure</th>
       <th>Strategy Sharpe Ratio</th>
+      <th>Asset Max Drawdown</th>
+      <th>Strategy Max Drawdown</th>
+      <th>Market Exposure</th>
+      <th>Correlation with Hold &amp; Buy</th>
       <th>Asset Daily Avg Volume</th>
       <th>Avg Holding Days</th>
       <th>Initial Capital</th>
       <th>Final Capital</th>
-      <th>Asset Annualized Return %</th>
-      <th>Strategy Annualized Return %</th>
+      <th>Used Stop-Loss</th>
+      <th>Used Take-Profit</th>
+      <th>Total fees payed</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>1</th>
-      <td>2014-01-02</td>
-      <td>2015-12-31</td>
-      <td>AMZN</td>
+      <td>2017-01-03</td>
+      <td>2020-05-01</td>
+      <td>GS</td>
+      <td>10</td>
+      <td>3</td>
       <td>7</td>
+      <td>6184.15</td>
+      <td>-7567.3</td>
+      <td>0.3</td>
+      <td>-2.46038</td>
+      <td>-13423.2</td>
+      <td>-12959.6</td>
+      <td>-22720.7</td>
+      <td>-0.227207</td>
+      <td>-0.134232</td>
+      <td>0.0929752</td>
+      <td>-0.106191</td>
+      <td>-0.13188</td>
+      <td>175.98</td>
+      <td>549.925</td>
+      <td>0.384782</td>
+      <td>0.182936</td>
+      <td>-0.294783</td>
+      <td>-0.336892</td>
+      <td>-0.487488</td>
+      <td>-0.29577</td>
+      <td>0.443914</td>
+      <td>0.474458</td>
+      <td>3.18137e+06</td>
+      <td>36</td>
+      <td>100000</td>
+      <td>87040.4</td>
       <td>2</td>
-      <td>5</td>
-      <td>62.74</td>
-      <td>-34.81</td>
-      <td>0.2857</td>
-      <td>-4.25571</td>
-      <td>-87733</td>
-      <td>698344</td>
-      <td>0.698344</td>
-      <td>-0.087733</td>
-      <td>-0.132607</td>
-      <td>-0.29505</td>
       <td>0</td>
-      <td>0</td>
-      <td>-87733</td>
-      <td>0.335705</td>
-      <td>0.328757</td>
-      <td>4</td>
-      <td>1</td>
-      <td>0.804009</td>
-      <td>0.253968</td>
-      <td>-0.541539</td>
-      <td>3.94081e+06</td>
-      <td>18</td>
-      <td>1000000</td>
-      <td>912267</td>
-      <td>0.303205</td>
-      <td>-0.0448733</td>
+      <td>1026.88</td>
     </tr>
   </tbody>
 </table>
 
 ```python
 
-amazonStrat.transactionTable
+goldmanStrat.transactionTable
 
 ```
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Date</th>
-      <th>Type</th>
-      <th>Price</th>
-      <th>Ticker</th>
-      <th>P/L</th>
-      <th>Number of shares</th>
-      <th>Total P/L</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>2014-03-17</td>
-      <td>Buy Long</td>
-      <td>375.040009</td>
-      <td>AMZN</td>
-      <td>NaN</td>
-      <td>2666</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2014-03-24</td>
-      <td>Stop-Loss Long</td>
-      <td>351.850006</td>
-      <td>AMZN</td>
-      <td>-23.190002</td>
-      <td>2666</td>
-      <td>-61824.5</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2014-06-06</td>
-      <td>Buy Long</td>
-      <td>329.670013</td>
-      <td>AMZN</td>
-      <td>NaN</td>
-      <td>2846</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>2014-07-31</td>
-      <td>Stop-Loss Long</td>
-      <td>312.989990</td>
-      <td>AMZN</td>
-      <td>-16.680023</td>
-      <td>2846</td>
-      <td>-47471.3</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>2014-08-28</td>
-      <td>Buy Long</td>
-      <td>340.019989</td>
-      <td>AMZN</td>
-      <td>NaN</td>
-      <td>2620</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>2014-09-22</td>
-      <td>Sell Long</td>
-      <td>324.500000</td>
-      <td>AMZN</td>
-      <td>-15.519989</td>
-      <td>2620</td>
-      <td>-40662.4</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>2014-11-19</td>
-      <td>Buy Long</td>
-      <td>326.540009</td>
-      <td>AMZN</td>
-      <td>NaN</td>
-      <td>2603</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>2014-12-08</td>
-      <td>Stop-Loss Long</td>
-      <td>306.640015</td>
-      <td>AMZN</td>
-      <td>-19.899994</td>
-      <td>2603</td>
-      <td>-51799.7</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>2015-01-30</td>
-      <td>Buy Long</td>
-      <td>354.529999</td>
-      <td>AMZN</td>
-      <td>NaN</td>
-      <td>2252</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>2015-03-31</td>
-      <td>Sell Long</td>
-      <td>372.100006</td>
-      <td>AMZN</td>
-      <td>17.570007</td>
-      <td>2252</td>
-      <td>39567.7</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>2015-04-13</td>
-      <td>Buy Long</td>
-      <td>382.359985</td>
-      <td>AMZN</td>
-      <td>NaN</td>
-      <td>2191</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>2015-04-24</td>
-      <td>Take-Profit Long</td>
-      <td>445.100006</td>
-      <td>AMZN</td>
-      <td>62.740021</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>2015-09-17</td>
-      <td>Buy Long</td>
-      <td>538.869995</td>
-      <td>AMZN</td>
-      <td>NaN</td>
-      <td>1810</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>2015-09-28</td>
-      <td>Stop-Loss Long</td>
-      <td>504.059998</td>
-      <td>AMZN</td>
-      <td>-34.809998</td>
-      <td>1810</td>
-      <td>-63006.1</td>
-    </tr>
-  </tbody>
-</table>
 
 ```python
 
