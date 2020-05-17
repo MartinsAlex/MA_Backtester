@@ -329,14 +329,6 @@ creditSuisseStrat.transactionTable
   </tbody>
 </table>
 
-Le dernier élément retourné est un graphique, si l'argument showplot est "True" :
-
-```python
-
-creditSuisseStrat.showPlot()
-
-```
-
 --------
 
 &nbsp;
