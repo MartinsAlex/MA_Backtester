@@ -107,7 +107,7 @@ La fonction retourne deux tables pandas et une figure matplotlib. La première t
 
 ```python
 
-creditSuisseStrat.resultsTable
+spyStrat.resultsTable
 
 ```
 <table border="1" class="dataframe">
@@ -154,38 +154,38 @@ creditSuisseStrat.resultsTable
   <tbody>
     <tr>
       <th>1</th>
-      <td>2002-01-02</td>
-      <td>2009-12-31</td>
-      <td>CS</td>
-      <td>6</td>
-      <td>4</td>
+      <td>2018-01-02</td>
+      <td>2020-05-01</td>
+      <td>SPY</td>
       <td>2</td>
-      <td>599940</td>
-      <td>-220262</td>
-      <td>0.6667</td>
-      <td>5.24333</td>
-      <td>1.35575e+06</td>
-      <td>1.74428e+06</td>
-      <td>412927</td>
-      <td>0.412927</td>
-      <td>1.35575</td>
-      <td>0.942827</td>
-      <td>0.0441774</td>
-      <td>0.138118</td>
-      <td>28.2893</td>
-      <td>388529</td>
-      <td>0.48502</td>
-      <td>0.258394</td>
-      <td>0.0870497</td>
-      <td>0.485105</td>
-      <td>-0.74091</td>
-      <td>-0.315023</td>
-      <td>0.828288</td>
-      <td>-0.141762</td>
-      <td>598646</td>
-      <td>252</td>
+      <td>0</td>
+      <td>2</td>
+      <td>-59893.4</td>
+      <td>-69858.8</td>
+      <td>0</td>
+      <td>-17.8659</td>
+      <td>-129752</td>
+      <td>-214287</td>
+      <td>98875.1</td>
+      <td>0.0988751</td>
+      <td>-0.129752</td>
+      <td>-0.228627</td>
+      <td>0.0413079</td>
+      <td>-0.0957403</td>
+      <td>-257.75</td>
+      <td>-84535.1</td>
+      <td>0.240043</td>
+      <td>0.21896</td>
+      <td>0.164623</td>
+      <td>-0.479157</td>
+      <td>-0.337173</td>
+      <td>-0.33911</td>
+      <td>0.592845</td>
+      <td>0.511657</td>
+      <td>9.26934e+07</td>
+      <td>163</td>
       <td>1000000</td>
-      <td>2.74428e+06</td>
+      <td>785713</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -195,7 +195,7 @@ creditSuisseStrat.resultsTable
 
 ```python
 
-creditSuisseStrat.transactionTable
+spyStrat.transactionTable
 
 ```
 <table border="1" class="dataframe">
