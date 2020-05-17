@@ -205,199 +205,125 @@ creditSuisseStrat.transactionTable
       <th>Ticker</th>
       <th>P/L</th>
       <th>Number of shares</th>
-      <th>Total P/L</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>2000-11-08</td>
-      <td>Buy Short</td>
-      <td>24.747902</td>
+      <td>2003-05-16</td>
+      <td>Buy Long</td>
+      <td>15.280393</td>
       <td>CS</td>
       <td>NaN</td>
-      <td>404</td>
-      <td>NaN</td>
+      <td>65443</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2002-01-10</td>
-      <td>Sell Short</td>
-      <td>24.150114</td>
+      <td>2004-05-18</td>
+      <td>Sell Long</td>
+      <td>19.514650</td>
       <td>CS</td>
-      <td>0.597788</td>
-      <td>404</td>
-      <td>241.506</td>
+      <td>4.234258</td>
+      <td>65443</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2002-01-10</td>
-      <td>Buy Long</td>
-      <td>24.150114</td>
+      <td>2004-05-18</td>
+      <td>Buy Short</td>
+      <td>19.514650</td>
       <td>CS</td>
       <td>NaN</td>
-      <td>424</td>
-      <td>NaN</td>
+      <td>65443</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>2002-03-01</td>
-      <td>Sell Long</td>
-      <td>19.280340</td>
+      <td>2004-11-19</td>
+      <td>Sell Short</td>
+      <td>22.880358</td>
       <td>CS</td>
-      <td>-4.869774</td>
-      <td>424</td>
-      <td>-2064.78</td>
+      <td>-3.365707</td>
+      <td>65443</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>2002-03-01</td>
-      <td>Buy Short</td>
-      <td>19.280340</td>
+      <td>2004-11-19</td>
+      <td>Buy Long</td>
+      <td>22.880358</td>
       <td>CS</td>
       <td>NaN</td>
-      <td>424</td>
-      <td>NaN</td>
+      <td>46189</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>2003-05-16</td>
-      <td>Sell Short</td>
-      <td>15.553974</td>
+      <td>2006-08-15</td>
+      <td>Sell Long</td>
+      <td>34.165817</td>
       <td>CS</td>
-      <td>3.726366</td>
-      <td>424</td>
-      <td>1579.98</td>
+      <td>11.285460</td>
+      <td>46189</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>2003-05-16</td>
-      <td>Buy Long</td>
-      <td>15.553974</td>
+      <td>2006-08-15</td>
+      <td>Buy Short</td>
+      <td>34.165817</td>
       <td>CS</td>
       <td>NaN</td>
-      <td>627</td>
-      <td>NaN</td>
+      <td>46189</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>2004-05-18</td>
-      <td>Sell Long</td>
-      <td>19.864042</td>
+      <td>2006-09-27</td>
+      <td>Sell Short</td>
+      <td>36.258106</td>
       <td>CS</td>
-      <td>4.310068</td>
-      <td>627</td>
-      <td>2702.41</td>
+      <td>-2.092289</td>
+      <td>46189</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>2004-05-18</td>
-      <td>Buy Short</td>
-      <td>19.864042</td>
+      <td>2006-09-27</td>
+      <td>Buy Long</td>
+      <td>36.258106</td>
       <td>CS</td>
       <td>NaN</td>
-      <td>627</td>
-      <td>NaN</td>
+      <td>40858</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>2004-11-19</td>
-      <td>Sell Short</td>
-      <td>23.290010</td>
+      <td>2007-08-24</td>
+      <td>Sell Long</td>
+      <td>42.972843</td>
       <td>CS</td>
-      <td>-3.425968</td>
-      <td>627</td>
-      <td>-2148.08</td>
+      <td>6.714737</td>
+      <td>40858</td>
     </tr>
     <tr>
       <th>10</th>
-      <td>2004-11-19</td>
-      <td>Buy Long</td>
-      <td>23.290010</td>
+      <td>2007-08-24</td>
+      <td>Buy Short</td>
+      <td>42.972843</td>
       <td>CS</td>
       <td>NaN</td>
-      <td>443</td>
-      <td>NaN</td>
+      <td>40858</td>
     </tr>
     <tr>
       <th>11</th>
-      <td>2006-08-15</td>
-      <td>Sell Long</td>
-      <td>34.777523</td>
+      <td>2009-05-19</td>
+      <td>Sell Short</td>
+      <td>28.289312</td>
       <td>CS</td>
-      <td>11.487513</td>
-      <td>443</td>
-      <td>5088.97</td>
+      <td>14.683531</td>
+      <td>40858</td>
     </tr>
     <tr>
       <th>12</th>
-      <td>2006-08-15</td>
-      <td>Buy Short</td>
-      <td>34.777523</td>
-      <td>CS</td>
-      <td>NaN</td>
-      <td>443</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>2006-09-27</td>
-      <td>Sell Short</td>
-      <td>36.907272</td>
-      <td>CS</td>
-      <td>-2.129749</td>
-      <td>443</td>
-      <td>-943.479</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>2006-09-27</td>
-      <td>Buy Long</td>
-      <td>36.907272</td>
-      <td>CS</td>
-      <td>NaN</td>
-      <td>392</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>2007-08-24</td>
-      <td>Sell Long</td>
-      <td>43.742233</td>
-      <td>CS</td>
-      <td>6.834961</td>
-      <td>392</td>
-      <td>2679.3</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>2007-08-24</td>
-      <td>Buy Short</td>
-      <td>43.742233</td>
-      <td>CS</td>
-      <td>NaN</td>
-      <td>392</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>2009-05-19</td>
-      <td>Sell Short</td>
-      <td>28.795807</td>
-      <td>CS</td>
-      <td>14.946426</td>
-      <td>392</td>
-      <td>5859</td>
-    </tr>
-    <tr>
-      <th>18</th>
       <td>2009-05-19</td>
       <td>Buy Long</td>
-      <td>28.795807</td>
+      <td>28.289312</td>
       <td>CS</td>
       <td>NaN</td>
-      <td>799</td>
-      <td>NaN</td>
+      <td>83273</td>
     </tr>
   </tbody>
 </table>
