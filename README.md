@@ -856,8 +856,8 @@ slowMa tested = ... -> x combinaisons
 cryptoStrat.optimize("Over/Under-performance %", fastMaRange= [8, 10],  slowMaRange = [13, 15], type="max")
 
 ```
-###### Trying combinaison 0/9
-###### Working on ticker 1 / 5 (BTC-USD)
+######## Trying combinaison 0/9
+######## Working on ticker 1 / 5 (BTC-USD)
 ###### Working on ticker 2 / 5 (ETH-USD)
 ###### Working on ticker 3 / 5 (LTC-USD)
 ###### Working on ticker 4 / 5 (BCH-USD)
