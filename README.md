@@ -13,20 +13,15 @@
 
 ### A simple, but powerful, fintech module . It allows to test strategies based on moving averages crossover, on nearly :
 
-* 100'000 actions
-* 120 crypto-monnaies
-* 35 monnaies cotées en USD
-* Nombreux autres actifs tels que des indices, futures et ETFs
-
+* 100'000 stocks
+* 120 crypto-currencies
+* 35 currencies quoted in USD
+* Numerous other assets such as indices, futures and ETFs
 
 
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-
- 
-
-
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
