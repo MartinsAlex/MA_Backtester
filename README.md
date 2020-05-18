@@ -56,7 +56,7 @@ pip install https://github.com/MartinsAlex/MA_Backtester/archive/master.zip
 
 # Utilisation
 
-Detailed documentation can be called with built-in help() function. All Yahoo and FRED forex Tickers are working. Some example list can be found in "tickerLists" folder.
+Arguments, attributes and methods are explained in the class documentation that can be called with the help() built-in function.
 
 &nbsp;
 
