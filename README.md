@@ -593,12 +593,7 @@ cryptoStrat.analyse()
 
 
 ```
-###### Working on ticker 1 / 5 (BTC-USD)
-###### Working on ticker 2 / 5 (ETH-USD)
-###### Working on ticker 3 / 5 (LTC-USD)
-###### Working on ticker 4 / 5 (BCH-USD)
-###### Working on ticker 5 / 5 (XRP-USD)
-###### Done !
+
 
 <table border="1" class="dataframe">
   <thead>
