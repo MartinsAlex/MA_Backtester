@@ -587,7 +587,7 @@ goldmanStrat.transactionTable
 
 &nbsp;
 
-## Example 3 : Multiple asset analysis
+## Example 3 : Analyse multiple crypto-currencies
 
 --------
 
