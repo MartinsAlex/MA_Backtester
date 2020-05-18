@@ -23,7 +23,7 @@
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-# Sommaire
+# Summary
 
 1. [Installation](https://github.com/MartinsAlex/MA_Backtester/blob/master/README.md#installation)
 1. [Utilisation](https://github.com/MartinsAlex/MA_Backtester/blob/master/README.md#utilisation)
@@ -39,7 +39,7 @@
 pip install https://github.com/MartinsAlex/MA_Backtester/archive/master.zip
     
 ```
-#### Modules exigés :
+#### Required modules :
 
 - matplotlib
 - pandas
@@ -52,6 +52,8 @@ pip install https://github.com/MartinsAlex/MA_Backtester/archive/master.zip
 # Utilisation
 
 Detailed documentation can be called with built-in help() function. All Yahoo and FRED forex Tickers are working. Some example list can be found in "tickerLists" folder.
+
+&nbsp;
 
 ## Example 1 : SPDR S&P 500 Trust ETF
 
