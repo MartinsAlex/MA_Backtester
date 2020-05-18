@@ -698,8 +698,8 @@ cryptoStrat.analyse()
       <td>85</td>
       <td>29</td>
       <td>56</td>
-      <td>1.05431e+06</td>
-      <td>-227184</td>
+      <td>704959</td>
+      <td>-206924</td>
       <td>0.3412</td>
       <td>131.779</td>
       <td>1.36725e+06</td>
@@ -774,8 +774,8 @@ cryptoStrat.analyse()
       <td>159</td>
       <td>61</td>
       <td>98</td>
-      <td>3.19187e+06</td>
-      <td>-1.50961e+06</td>
+      <td>2.18384e+06</td>
+      <td>-1.01185e+06</td>
       <td>0.3836</td>
       <td>84.2901</td>
       <td>3.92802e+06</td>
@@ -812,8 +812,8 @@ cryptoStrat.analyse()
       <td>191</td>
       <td>77</td>
       <td>114</td>
-      <td>3.19187e+06</td>
-      <td>-1.50961e+06</td>
+      <td>516900</td>
+      <td>-292083</td>
       <td>0.4031</td>
       <td>70.1709</td>
       <td>922799</td>
