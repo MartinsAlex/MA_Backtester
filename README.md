@@ -861,7 +861,7 @@ Best combinaison found :
 
 fastMA : 9.0
 slowMA : 14.0
-Over/Under-performance % : 4.275443
+Over/Under-performance : 427.5443 %
 
 
 --------
