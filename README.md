@@ -844,7 +844,7 @@ cryptoStrat.analyse()
 </table>
 
 
-## Then find the moving averages allocation that produce the best performance :
+## Then find the moving averages allocation that would have produced the best performance :
 
 
 
@@ -923,7 +923,7 @@ The function returns a pandas dataFrame with all the combinaison tested :
 </table>
 
 
-## Or is the less risky :
+## Or would have been the less risky :
 
 ```python
 
