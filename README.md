@@ -592,6 +592,7 @@ goldmanStrat.transactionTable
 #### Bitcoin, Ethereum, Litecoin, BitcoinCash and XRP. January 2018 to may 2020. Stratégie basée sur le croisement des moyennes mobiles exponentielles de 8 et 13 jours.
 - Capital initial : 10'000 USD 
 - Prise de position short et long
+- Commission : 0.1 %
 
 ```python
 
