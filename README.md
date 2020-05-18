@@ -176,7 +176,6 @@ spyStrat.resultsTable
   </tbody>
 </table>
 
-La seconde, les transactions effectuées :
 
 ```python
 
@@ -252,8 +251,8 @@ spyStrat.transactionTable
 ## Example 2 : Goldman Sachs
 
 #### From january 2017 to may 2020. Stratégie basée sur le croisement des moyennes mobiles pondérées de 20 et 50 jours. 
-- Capital initial : 100'000 USD 
-- Prise de position long only
+- Initial capital : 100'000 USD 
+- Long only positions
 - Stop-loss : 5 %
 - Commission : 0.1 %
 
@@ -576,8 +575,8 @@ goldmanStrat.transactionTable
 ## Example 3 : Analyse multiple crypto-currencies
 
 #### Bitcoin, Ethereum, Litecoin, BitcoinCash and XRP. January 2018 to may 2020. Stratégie basée sur le croisement des moyennes mobiles exponentielles de 8 et 13 jours.
-- Capital initial : 10'000 USD 
-- Prise de position short et long
+- Initial capital : 10'000 USD 
+- Short and long positions
 - Commission : 0.1 %
 
 ```python
@@ -828,7 +827,6 @@ cryptoStrat.analyse()
 
 
 ## Then find the moving averages allocation that would have produced the best performance :
-
 
 
 ```python
