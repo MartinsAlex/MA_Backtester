@@ -11,7 +11,7 @@
 
 
 
-### A simple fintech module but designed to be powerful. It allows to test strategies based on moving averages crossover, on nearly :
+### A simple, but powerful, fintech module . It allows to test strategies based on moving averages crossover, on nearly :
 
 * 100'000 actions
 * 120 crypto-monnaies
