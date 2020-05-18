@@ -857,11 +857,73 @@ cryptoStrat.optimize("Over/Under-performance %", fastMaRange= [8, 10],  slowMaRa
 
 ```
 
-Best combinaison found :
 
-fastMA : 9.0
-slowMA : 14.0
-Over/Under-performance : 427.5443 %
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>fastMA</th>
+      <th>slowMA</th>
+      <th>Over/Under-performance %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>8.0</td>
+      <td>13.0</td>
+      <td>3.593365</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>8.0</td>
+      <td>14.0</td>
+      <td>3.631902</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>8.0</td>
+      <td>15.0</td>
+      <td>3.447292</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>9.0</td>
+      <td>13.0</td>
+      <td>3.913140</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>9.0</td>
+      <td>14.0</td>
+      <td>4.275443</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>9.0</td>
+      <td>15.0</td>
+      <td>3.075884</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>10.0</td>
+      <td>13.0</td>
+      <td>3.583561</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>10.0</td>
+      <td>14.0</td>
+      <td>2.452192</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>10.0</td>
+      <td>15.0</td>
+      <td>1.926440</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ## Or is the less risky :
