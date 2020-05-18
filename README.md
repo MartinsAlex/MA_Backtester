@@ -848,7 +848,6 @@ cryptoStrat.analyse()
 
 ## Then find the moving averages allocation that produce the best performance :
 
-slowMa tested = ... -> x combinaisons 
 
 
 ```python
@@ -856,7 +855,7 @@ slowMa tested = ... -> x combinaisons
 cryptoStrat.optimize("Over/Under-performance %", fastMaRange= [8, 10],  slowMaRange = [13, 15], type="max")
 
 ```
-
+The function returns a pandas dataFrame with all the combinaison tested :
 
 <table border="1" class="dataframe">
   <thead>
@@ -928,6 +927,79 @@ cryptoStrat.optimize("Over/Under-performance %", fastMaRange= [8, 10],  slowMaRa
 
 ## Or is the less risky :
 
+```python
+
+cryptoStrat.optimize("Strategy Annualized Volatility", fastMaRange= [8, 10],  slowMaRange = [13, 15], type="min")
+
+```
+
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>fastMA</th>
+      <th>slowMA</th>
+      <th>Strategy Annualized Volatility</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>8.0</td>
+      <td>13.0</td>
+      <td>0.788789</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>8.0</td>
+      <td>14.0</td>
+      <td>0.788227</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>8.0</td>
+      <td>15.0</td>
+      <td>0.782712</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>9.0</td>
+      <td>13.0</td>
+      <td>0.788172</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>9.0</td>
+      <td>14.0</td>
+      <td>0.786504</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>9.0</td>
+      <td>15.0</td>
+      <td>0.786519</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>10.0</td>
+      <td>13.0</td>
+      <td>0.808755</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>10.0</td>
+      <td>14.0</td>
+      <td>0.810902</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>10.0</td>
+      <td>15.0</td>
+      <td>0.785784</td>
+    </tr>
+  </tbody>
+</table>
 
 --------
 
