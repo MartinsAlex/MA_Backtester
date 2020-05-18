@@ -846,7 +846,7 @@ cryptoStrat.analyse()
 </table>
 
 
-## Then find the best moving averages allocation :
+## Then find the moving averages allocation that produce the best performance :
 
 slowMa tested = ... -> x combinaisons 
 
@@ -857,10 +857,11 @@ cryptoStrat.optimize("Over/Under-performance %", fastMaRange= [8, 10],  slowMaRa
 
 ```
 
- Best combinaison found :
+Best combinaison found :
 
-   fastMA  slowMA  Over/Under-performance %
-4     9.0    14.0                  4.275443
+fastMA : 9.0
+slowMA : 14.0
+Over/Under-performance % : 4.275443
 
 
 --------
