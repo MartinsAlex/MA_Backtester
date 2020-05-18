@@ -589,9 +589,20 @@ goldmanStrat.transactionTable
 
 ## Example 3 : Analyse multiple crypto-currencies
 
---------
+#### Bitcoin, Ethereum, Litecoin, BitcoinCash and XRP. January 2018 to may 2020. Stratégie basée sur le croisement des moyennes mobiles exponentielles de 8 et 13 jours.
+- Capital initial : 10'000 USD 
+- Prise de position short et long
 
-&nbsp;
+```python
+
+cryptoStrat = mb.movingAverageCrossover(["BTC-USD", "ETH-USD", "LTC-USD", "BCH-USD", "XRP-USD"], 8, 13, "2018-01-01", "2020-05-01", 
+                                   maType="exp", shortLong="both", balance=10_000, commission=0.001)
+
+cryptoStrat.analyse()
+
+
+```
+
 
 ## Then find the best moving averages allocation :
 
