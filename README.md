@@ -6,7 +6,6 @@
 
 ![PNG](readme_files/jesseQuote.PNG)
 
-<img src="readme_files/jesseQuote.PNG" alt="quote" class="center">
 
 # This code is still in development and docs will be available in english soon.
 
