@@ -250,7 +250,7 @@ spyStrat.transactionTable
 
 ## Example 2 : Goldman Sachs
 
-#### From january 2017 to may 2020. Stratégie basée sur le croisement des moyennes mobiles pondérées de 20 et 50 jours. 
+#### From january 2017 to may 2020. Weighted Moving Averages of 20 and 50 days.
 - Initial capital : 100'000 USD 
 - Long only positions
 - Stop-loss : 5 %
@@ -574,7 +574,7 @@ goldmanStrat.transactionTable
 
 ## Example 3 : Analyse multiple crypto-currencies
 
-#### Bitcoin, Ethereum, Litecoin, BitcoinCash and XRP. January 2018 to may 2020. Stratégie basée sur le croisement des moyennes mobiles exponentielles de 8 et 13 jours.
+#### Bitcoin, Ethereum, Litecoin, BitcoinCash and XRP. January 2018 to may 2020. Exponential Moving Averages of 8 and 13 days.
 - Initial capital : 10'000 USD 
 - Short and long positions
 - Commission : 0.1 %
