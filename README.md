@@ -51,10 +51,7 @@ pip install https://github.com/MartinsAlex/MA_Backtester/archive/master.zip
 
 # Utilisation
 
-## Arguments et méthodes
-&nbsp;
-## Les tickers utilisables
-&nbsp;
+Detailed documentation can be called with built-in help() function. All Yahoo and FRED forex Tickers are working. Some example list can be found in "tickerLists" folder.
 
 ## Example 1 : SPDR S&P 500 Trust ETF
 
