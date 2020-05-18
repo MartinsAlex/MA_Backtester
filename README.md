@@ -28,7 +28,7 @@
 <p>&nbsp;</p>
 
  
-![png](readme_files/jesseQuote.png)
+![PNG](readme_files/jesseQuote.PNG)
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
