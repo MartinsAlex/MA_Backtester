@@ -864,6 +864,9 @@ slowMA : 14.0
 Over/Under-performance : 427.5443 %
 
 
+## Or is the less risky :
+
+
 --------
 
 &nbsp;
