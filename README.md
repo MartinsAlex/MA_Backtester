@@ -4,7 +4,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/MartinsAlex/MA_Backtester/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/MartinsAlex/MA_Backtester?targetFile=requirements.txt)<space><space>
 [![Project Status: Concept – Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https://www.repostatus.org/#concept)
 
-
+![PNG](readme_files/jesseQuote.PNG)
 
 
 # This code is still in development and docs will be available in english soon.
@@ -28,7 +28,7 @@
 <p>&nbsp;</p>
 
  
-![PNG](readme_files/jesseQuote.PNG)
+
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
