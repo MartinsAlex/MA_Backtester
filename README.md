@@ -11,10 +11,7 @@
 
 
 
-### Un module fintech se voulant simple et intuitif, mais puissant. Il permet de tester la performance historique de stratégies de trading systématique, basées sur le croisement de moyenne mobile.
-
-
-### Il est utilisable sur près de :
+### A simple fintech module but designed to be powerful. It allows to test strategies based on moving averages crossover, on nearly :
 
 * 100'000 actions
 * 120 crypto-monnaies
