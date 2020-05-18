@@ -62,7 +62,7 @@ Detailed documentation can be called with built-in help() function. All Yahoo an
 
 ## Example 1 : SPDR S&P 500 Trust ETF
 
-#### January 2018 to may 2020. Stratégie basée sur le croisement des moyennes mobiles simples de 50 et 200 jours. 
+#### January 2018 to may 2020. Simple moving averages of 50 and 200 days.
 - Initial capital : 10'000 USD 
 - Short and long positions
 - No transaction fees
