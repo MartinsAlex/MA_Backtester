@@ -666,7 +666,7 @@ cs_strat.transactionTable
 
 &nbsp;
 
-## Example 3 : Analyse multiple crypto-currencies
+## Example 3 : Analysis of multiple crypto-currencies
 
 #### Bitcoin, Ethereum, Litecoin, BitcoinCash and XRP. January 2018 to may 2020. Exponential Moving Averages of 8 and 13 days.
 - Initial capital : 1000 USD
