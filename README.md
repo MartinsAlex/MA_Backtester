@@ -187,7 +187,6 @@ spyStrat.transactionTable
 ```
 
 
-
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -362,9 +361,9 @@ spyStrat.transactionTable
 &nbsp;
 
 
-## Example 2 : Goldman Sachs
+## Example 2 : Crédit Suisse
 
-#### From january 2017 to may 2020. Weighted Moving Averages of 50 and 200 days.
+#### From 2004 to 2015. Weighted Moving Averages of 50 and 200 days.
 - Initial capital : 100'000 USD 
 - Long only positions
 - Stop-loss : 5 %
@@ -373,10 +372,13 @@ spyStrat.transactionTable
 
 ```python
 
-goldmanStrat = mb.movingAverageCrossover(["gs"], 50, 200, "2017-01-01", "2020-05-01", 
+import MA_Backtester as mb
+import matplotlib.pyplot as plt
+
+cs_strat = mb.movingAverageCrossover(["cs"], 50, 200, "2004-01-01", "2015-01-01", 
                                       maType="weighted", plot=True, shortLong="long", capital=100_000,
                                      stopLoss=0.05, commission=0.001)
-goldmanStrat.analyse()
+cs_strat.analyse()
 
 plt.show()
 
@@ -385,9 +387,10 @@ plt.show()
 
 ```python
 
-goldmanStrat.resultsTable
+cs_strat.resultsTable
 
 ```
+
 
 <table border="1" class="dataframe">
   <thead>
@@ -433,50 +436,52 @@ goldmanStrat.resultsTable
   <tbody>
     <tr>
       <th>1</th>
-      <td>2017-01-03</td>
-      <td>2020-05-01</td>
-      <td>GS</td>
-      <td>2</td>
+      <td>2004-01-02</td>
+      <td>2014-12-31</td>
+      <td>CS</td>
+      <td>9</td>
+      <td>5</td>
+      <td>4</td>
+      <td>63795</td>
+      <td>-13000.3</td>
+      <td>0.5556</td>
+      <td>2.45572</td>
+      <td>126335</td>
+      <td>126335</td>
+      <td>-7221.31</td>
+      <td>-0.0722131</td>
+      <td>1.26335</td>
+      <td>1.33557</td>
+      <td>-0.0067981</td>
+      <td>0.19147</td>
       <td>0</td>
-      <td>2</td>
-      <td>-56378.3</td>
-      <td>-71356.5</td>
       <td>0</td>
-      <td>-14.4016</td>
-      <td>-129677</td>
-      <td>-129677</td>
-      <td>-227207</td>
-      <td>-0.227207</td>
-      <td>-0.129677</td>
-      <td>0.0975298</td>
-      <td>-0.106191</td>
-      <td>-0.252747</td>
+      <td>0.429507</td>
+      <td>0.185931</td>
+      <td>-0.0186348</td>
+      <td>0.393765</td>
+      <td>-0.754943</td>
+      <td>-0.312255</td>
+      <td>0.424341</td>
+      <td>0.432907</td>
+      <td>1.14115e+06</td>
+      <td>131</td>
+      <td>100000</td>
+      <td>226335</td>
+      <td>4</td>
       <td>0</td>
-      <td>0</td>
-      <td>0.384782</td>
-      <td>0.132816</td>
-      <td>-0.295173</td>
-      <td>-0.465458</td>
-      <td>-0.487488</td>
-      <td>-0.233357</td>
-      <td>0.207637</td>
-      <td>0.3446</td>
-      <td>3.18137e+06</td>
-      <td>87</td>
-      <td>1000000</td>
-      <td>870323</td>
-      <td>2</td>
-      <td>0</td>
-      <td>1942.27</td>
+      <td>1525.18</td>
     </tr>
   </tbody>
 </table>
 
+
 ```python
 
-goldmanStrat.transactionTable
+cs_strat.transactionTable
 
 ```
+
 
 
 <table border="1" class="dataframe">
@@ -494,84 +499,165 @@ goldmanStrat.transactionTable
   <tbody>
     <tr>
       <th>0</th>
-      <td>2018-05-15</td>
+      <td>2004-11-04</td>
       <td>Buy Long</td>
-      <td>260.615570</td>
-      <td>SPY</td>
+      <td>21.331051</td>
+      <td>CS</td>
       <td>NaN</td>
-      <td>3837</td>
+      <td>4688</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2018-10-18</td>
+      <td>2005-06-15</td>
       <td>Sell Long</td>
-      <td>268.111938</td>
-      <td>SPY</td>
-      <td>7.496368</td>
-      <td>3837</td>
+      <td>24.017841</td>
+      <td>CS</td>
+      <td>2.686790</td>
+      <td>4688</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2019-01-31</td>
+      <td>2005-08-05</td>
       <td>Buy Long</td>
-      <td>263.364990</td>
-      <td>SPY</td>
+      <td>25.525030</td>
+      <td>CS</td>
       <td>NaN</td>
-      <td>3906</td>
+      <td>4407</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>2019-05-29</td>
+      <td>2006-07-13</td>
       <td>Sell Long</td>
-      <td>272.698029</td>
-      <td>SPY</td>
-      <td>9.333038</td>
-      <td>3906</td>
+      <td>32.869827</td>
+      <td>CS</td>
+      <td>7.344797</td>
+      <td>4407</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>2019-06-27</td>
+      <td>2006-09-21</td>
       <td>Buy Long</td>
-      <td>287.052521</td>
-      <td>SPY</td>
+      <td>36.954388</td>
+      <td>CS</td>
       <td>NaN</td>
-      <td>3710</td>
+      <td>3917</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>2019-08-16</td>
+      <td>2007-07-31</td>
       <td>Sell Long</td>
-      <td>284.442932</td>
-      <td>SPY</td>
-      <td>-2.609589</td>
-      <td>3710</td>
+      <td>41.436359</td>
+      <td>CS</td>
+      <td>4.481972</td>
+      <td>3917</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>2019-09-18</td>
+      <td>2009-04-23</td>
       <td>Buy Long</td>
-      <td>296.506042</td>
-      <td>SPY</td>
+      <td>25.758791</td>
+      <td>CS</td>
       <td>NaN</td>
-      <td>3559</td>
+      <td>6295</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>2020-03-03</td>
+      <td>2010-01-20</td>
       <td>Sell Long</td>
-      <td>298.484802</td>
-      <td>SPY</td>
-      <td>1.978760</td>
-      <td>3559</td>
+      <td>33.082695</td>
+      <td>CS</td>
+      <td>7.323904</td>
+      <td>6295</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>2020-04-30</td>
+      <td>2010-08-18</td>
       <td>Buy Long</td>
-      <td>290.480011</td>
-      <td>SPY</td>
+      <td>31.495510</td>
+      <td>CS</td>
       <td>NaN</td>
-      <td>3658</td>
+      <td>6607</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>2010-09-30</td>
+      <td>Stop-Loss Long</td>
+      <td>29.734886</td>
+      <td>CS</td>
+      <td>-1.760624</td>
+      <td>6607</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2011-02-01</td>
+      <td>Buy Long</td>
+      <td>31.872784</td>
+      <td>CS</td>
+      <td>NaN</td>
+      <td>6157</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>2011-02-10</td>
+      <td>Stop-Loss Long</td>
+      <td>30.230936</td>
+      <td>CS</td>
+      <td>-1.641848</td>
+      <td>6157</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>2012-03-07</td>
+      <td>Buy Long</td>
+      <td>18.705050</td>
+      <td>CS</td>
+      <td>NaN</td>
+      <td>9941</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>2012-04-26</td>
+      <td>Stop-Loss Long</td>
+      <td>17.717535</td>
+      <td>CS</td>
+      <td>-0.987514</td>
+      <td>9941</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>2012-10-03</td>
+      <td>Buy Long</td>
+      <td>16.500366</td>
+      <td>CS</td>
+      <td>NaN</td>
+      <td>10663</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>2013-12-12</td>
+      <td>Sell Long</td>
+      <td>22.483208</td>
+      <td>CS</td>
+      <td>5.982841</td>
+      <td>10663</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>2014-01-09</td>
+      <td>Buy Long</td>
+      <td>24.488026</td>
+      <td>CS</td>
+      <td>NaN</td>
+      <td>9783</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>2014-01-31</td>
+      <td>Stop-Loss Long</td>
+      <td>23.159159</td>
+      <td>CS</td>
+      <td>-1.328867</td>
+      <td>9783</td>
     </tr>
   </tbody>
 </table>
