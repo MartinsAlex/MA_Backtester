@@ -74,7 +74,7 @@ import matplotlib.pyplot as plt
 
 
 spyStrat = mb.movingAverageCrossover(["SPY"], 20, 50, "2018-01-01", "2020-05-01", 
-                                   maType="simple", plot=True, shortLong="both", balance=10_000)
+                                   maType="simple", plot=True, shortLong="both", capital=10_000)
 
 spyStrat.analyse()
 
@@ -93,6 +93,7 @@ plt.show()
 spyStrat.resultsTable
 
 ```
+
 
 <table border="1" class="dataframe">
   <thead>
@@ -183,6 +184,7 @@ spyStrat.resultsTable
 spyStrat.transactionTable
 
 ```
+
 
 <table border="1" class="dataframe">
   <thead>
