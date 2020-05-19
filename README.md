@@ -662,11 +662,24 @@ cs_strat.transactionTable
   </tbody>
 </table>
 
+
 --------
 
 &nbsp;
 
-## Example 3 : Analysis of multiple crypto-currencies
+## Example 3 : Brazilian Real
+
+#### Bitcoin, Ethereum, Litecoin, BitcoinCash and XRP. January 2018 to may 2020. Exponential Moving Averages of 8 and 13 days.
+- Initial capital : 1000 USD
+- Short and long positions
+- Commission : 0.1 %
+
+
+--------
+
+&nbsp;
+
+## Example 4 : Analysis of multiple crypto-currencies
 
 #### Bitcoin, Ethereum, Litecoin, BitcoinCash and XRP. January 2018 to may 2020. Exponential Moving Averages of 8 and 13 days.
 - Initial capital : 1000 USD
