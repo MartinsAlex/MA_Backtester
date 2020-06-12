@@ -22,56 +22,49 @@ class movingAverageCrossover:
     '''
     The class to define the caracteristics of your moving average crossover strategy.
 
-    Arguments :
 
-        Required :
+    Parameters
+    ----------
 
-        1. tickers (list): The ticker or ticker list on which the strategy will be tested (examples : ["FB"] or ["AAPL", "TSLA", "AMZN", "GOOG"]).
-                            All the tickers from Yahoo and FRED (for the forex) can be used. Lists are available in the folder "tickerLists".
-        2. fastMA (int): The number of days for the short term moving average
-        3. slowMA (int): The number of days for the long term moving average
-        4. beginDate (str, date): The begin date of the analysis of format : yyyy-mm-dd
-        5. endDate (str, date): The begin date of the analysis of format : yyyy-mm-dd
+    tickers (str list) -- The ticker or ticker list on which the strategy will be tested (examples : ["FB"] or ["AAPL", "TSLA", "AMZN", "GOOG"]). All the tickers from Yahoo and FRED (for the forex) can be used. Lists samples are available in the folder "tickerLists".
 
-        Keywords Arguments
-        -------------------------
+    fastMA (int) -- The number of days for the short term moving average
 
-        shortLong (str) : Long, short positions or both. 3 possibilities :
-            "long" : long only
-            "short" : short only
-            "both" : long and short
-        capital (int or float) : Initial portfolio balance. All the capital available is invested in each trade.
-        maType (str) : the type of moving average for your strategy. 3 possibilities :
-            "simple" : simple moving average
-            "weighted" : weighted moving average
-            "exp" : exponentially weighted moving average
+    slowMA (int) -- The number of days for the long term moving average
 
+    beginDate (date, format: yyyy-mm-dd) -- The begin date of the analysis
 
-        Optionnals key-words args
-        -------------------------
+    endDate (date, format: yyyy-mm-dd) -- The end date of the analysis
 
-        stopLoss (float, from 0 to 1) : the limit for selling positon, in order to reduce losses.
-            Note that : because the analysis is made on Adjusted close prices (at the end of trading days) your loss can exceed the stop-loss.
-                        (example : stop-loss of 5 %, today price of a stock is 100. If tomorrow the price drops to 90, the share will be sold and
-                        the loss will be 10 : a 10 % loss)
-        takeProfit (float) : the limit for selling positon, in order to confirm profit.
-        rf (float) : you can specify the risk-free rate for the statistics calculations. If not, the default risk-free rate will be the
-                     13 Week Treasury Bill rate of the day.
-        plot (bool) : If True, the algorithm will make a plot of your strategy behavior. The base value is False and is recommended when your work on
-                          multiple stocks (5 or more).
-        signals (bool) : Optionnal arg that allows you to plot the signals, even if the balance drops under a level that makes it impossible to buy.
+    * Key-worded args :
 
-    Methods :
+    shortLong (str) -- the type of position taken in the strategy. 3 possibilities :"long" : long only / "short" : short only / "both" : long and short
 
-        analyse() :
+    capital (int) -- Initial portfolio balance. All the capital available is invested in each trade. Default is 1 million.
 
-        optimize() :
+    maType (str) -- the type of moving average for your strategy. Default is simple. 3 possibilities : "simple" : simple moving average / "weighted" : weighted moving average / "exp" : exponentially weighted moving average
 
+    stopLoss (float, from 0 to 1) -- stop-loss limit, in %.
+        Note that : because the analysis is made on Adjusted close prices (at the end of trading days) your loss can exceed the stop-loss. (example : stop-loss of 5 %, today price of a stock is 100. If tomorrow the price drops to 90, the share will be sold and the loss will be 10 : a 10 % loss)
 
-    Attributes :
+    takeProfit (float, from 0 to 1) -- take-profit limit, in %. Working on Adj. Close, like the stop-loss.
+
+    rf (float) -- you can specify the risk-free rate for the statistics calculations. If not, the default risk-free rate will be the
+                 13 Week Treasury Bill rate of the day (Yahoo : ^IRX)
+
+    plot (bool) -- If True, the strategy behavior is plotted. Default is False and is recommended when you analyze multiple stocks (5 or more).
+
+    signals (bool) -- Optionnal arg that allows you to plot all the signals, even if the balance drops under a level that makes it impossible to buy.
+
+    Attributes
+    ----------
 
         resultsTable :
-            Pandas Dataframe containing the risk, returns and other statistics of the analyzed strategy.
+            Pandas Dataframe containing the strategy statistics. Some specific stats explained :
+            - "Total return" : in comparaison to "Total realized return", this is the realized return plus the open position return
+            - "Buy & Hold Return" : the return that you would have made if you bought the asset and holded it till the end
+            - "Open position (price)" : If < 0 , it is a short position.
+            - "Over/Under-performance %" : Underperform if this stats is < 0
 
         transactionTable :
             Pandas Dataframe containing all the transactions that would have been made by the strategy.
@@ -79,17 +72,20 @@ class movingAverageCrossover:
 
     '''
 
-    def __init__(self, tickers, fastMA, slowMA, beginDate, endDate, shortLong=str, capital=1_000_000, maType=str, **kwargs):
+    def __init__(self, tickers, fastMA, slowMA, beginDate, endDate, **kwargs):
+
+
         self.tickers = tickers
         self.beginDate = beginDate
         self.endDate = endDate
-        self.shortLong = shortLong
-        self.initialBalance = capital
 
         self.fastMA = fastMA
         self.slowMA = slowMA
-        self.maType = maType
 
+        # Kwargs :
+        self.initialBalance = kwargs.get('capital', 1_000_000)
+        self.shortLong = kwargs.get('shortLong', "long")
+        self.maType = kwargs.get('maType', "simple")
         self.stopLoss = kwargs.get('stopLoss', None)
         self.takeProfit = kwargs.get('takeProfit', None)
         self.rf = kwargs.get("rf", None)
@@ -110,8 +106,8 @@ class movingAverageCrossover:
                      "Largest Winning Trade", "Largest Losing Trade", "Win Rate", "Expectancy", "Total Realized Return", "Total Return",
                      "Buy & Hold Return", "Asset Return %", "Strategy Realized Return %", "Over/Under-performance %", 'Asset Annualized Return %', 'Strategy Annualized Return %',
                      "Open position (price)", "Open Trade P/L",  "Asset Annualized Volatility", "Strategy Annualized Volatility", "Asset Sharpe Ratio", "Strategy Sharpe Ratio",
-                     "Asset Max Drawdown", "Strategy Max Drawdown", "Market Exposure", "Correlation with Hold & Buy", "Asset Daily Avg Volume", "Avg Holding Days", "Initial Capital",
-                     "Final Capital",  "Used Stop-Loss", "Used Take-Profit", "Total fees payed"])  # Result table with column names
+                     "Asset Max Drawdown", "Strategy Max Drawdown", "Market Exposure",  "Asset Daily Avg Volume", "Avg Holding Days", "Initial Capital",
+                     "Final Capital", "Used Stop-Loss", "Used Take-Profit", "Total fees payed"])  # Result table with column names # "Correlation with Hold & Buy",
 
         # Table of transactions
         transactionTable = pd.DataFrame(columns=["Date", "Type", "Price", "Ticker", "P/L", "Number of shares"])
@@ -157,20 +153,30 @@ class movingAverageCrossover:
                     except:  # Sinon le problème vient du fait que le symbol ne marche pas
                         print("Ticker {} not working".format(symbol))
                         resultsTable.loc[x, ["Ticker"]] = symbol
+                        x += 1
 
                         if len(self.tickers) == 1:  # Si il n'y pas d'autres actif à analyser on quitte l'application
                             quit()
                         else:
                             continue
 
-                        i += 1
-                        x += 1
 
                 self.AssetDf = self.AssetDf.dropna()  # On élimine toutes les lignes qui ont des NaN
                 priceColumn = "Adj Close"  # On fixe le nom de la colonne contenant les prix car il varie selon la source
 
             self.AssetDf["Log_Returns"] = np.log(1 + self.AssetDf[priceColumn].pct_change(1))
             self.AssetDf["Deltas"] = self.AssetDf[priceColumn].diff()
+
+            # We check if there is enough data (daily price) for the analysis
+            if len(self.AssetDf) < self.slowMA:
+                print("Not enough data to analyze {}".format(symbol))
+
+                if len(self.tickers) == 1:  # Si il n'y pas d'autres actif à analyser on quitte l'application
+                    quit()
+                else:
+                    #x += 1
+                    continue  # Next stock
+
 
             ######################################################
 
@@ -268,7 +274,6 @@ class movingAverageCrossover:
                     fee = 0
                 else:
                     self.portfolioBalanceEvolution.append(capitalEvo)
-
 
 
 
@@ -522,6 +527,9 @@ class movingAverageCrossover:
                 openPosition = 0
                 nonRealizedReturn = 0
 
+            transactionTable = pd.DataFrame(transactionTable)
+            self.transactionTable = transactionTable
+
             #####################################################
             # Début de l'écriture dans le tableau des résultats #
             #####################################################
@@ -567,7 +575,7 @@ class movingAverageCrossover:
                 resultsTable.loc[x, ["Winning Trades"]] = wonTrade
                 resultsTable.loc[x, ["Losing Trades"]] = looseTrade
 
-                winLossVector = transactionTable["P/L"].astype(float) * transactionTable["Number of shares"].astype(float)
+                winLossVector = transactionTable.loc[transactionTable["Ticker"] == symbol, ("P/L")].astype(float) * transactionTable.loc[transactionTable["Ticker"] == symbol, ("Number of shares")].astype(float)
 
                 resultsTable.loc[x, ["Largest Winning Trade"]] = round(np.nanmax(winLossVector), 4)
                 resultsTable.loc[x, ["Largest Losing Trade"]] = round(np.nanmin(winLossVector), 4)
@@ -613,22 +621,30 @@ class movingAverageCrossover:
 
                 resultsTable.loc[x, ["Market Exposure"]] = totalDays / len(self.AssetDf)
 
-                # Portfolio Rdt :
+
                 self.portfolioBalanceEvolution = pd.Series(self.portfolioBalanceEvolution, index=self.AssetDf.index[1:])
-                portfolioReturns = np.log(1 + self.portfolioBalanceEvolution.pct_change(1))
+                # We take the portfolio values after the first position is taken, because before, the value is not moving
+                portfolioReturns = np.log(1 + self.portfolioBalanceEvolution[self.portfolioBalanceEvolution.index > self.transactionTable["Date"].iloc[0]].pct_change(1))
 
                 resultsTable.loc[x, ["Strategy Annualized Volatility"]] = np.std(portfolioReturns) * (tradingDaysNb ** 0.5)
 
                 resultsTable.loc[x, ["Strategy Sharpe Ratio"]] = (tradingDaysNb * np.mean(portfolioReturns) - self.rf) / (np.std(portfolioReturns) * (tradingDaysNb ** 0.5))  # Rdt annualisé
-                try:
-                    resultsTable.loc[x, ["Correlation with Hold & Buy"]] = np.corrcoef(self.AssetDf["Log_Returns"].iloc[2:], portfolioReturns.dropna())[0,1]
-                except:
-                    resultsTable.loc[x, ["Correlation with Hold & Buy"]] = float("NaN")
+
+                #try:
+                #    resultsTable.loc[x, ["Correlation with Hold & Buy"]] = np.corrcoef(self.AssetDf.loc[self.AssetDf.index > self.transactionTable["Date"].iloc[0], "Log_Returns"].iloc[1:],
+                #                                                                       portfolioReturns.dropna())[0,1]
+                #except:
+                #    resultsTable.loc[x, ["Correlation with Hold & Buy"]] = float("NaN")
+
 
             resultsTable.loc[x, ["Final Capital"]] = self.portfolioBalanceEvolution[-1]
+            if openPosition==0:
+                resultsTable.loc[x, ["Open position (price)"]] = float("NaN")
+                resultsTable.loc[x, ["Open Trade P/L"]] = float("NaN")
+            else:
+                resultsTable.loc[x, ["Open position (price)"]] = openPosition
+                resultsTable.loc[x, ["Open Trade P/L"]] = nonRealizedReturn * assetNb
 
-            resultsTable.loc[x, ["Open position (price)"]] = openPosition
-            resultsTable.loc[x, ["Open Trade P/L"]] = nonRealizedReturn * assetNb
 
             if symbol in forexFREDlist:  # Le volume n'est pas fourni par FRED pour le forex
                 resultsTable.loc[x, ["Asset Daily Avg Volume"]] = float("NaN")
@@ -655,18 +671,13 @@ class movingAverageCrossover:
 
             resultsTable.loc[x, ["Total fees payed"]] = totalFees
 
-            # Il faut annualiser le rendement et la volatilité pour calculer le sharpe-ratio
-            resultsTable.loc[x, ["Asset Sharpe Ratio"]] = (tradingDaysNb * np.mean(self.AssetDf["Log_Returns"]) - self.rf) / (np.std(self.AssetDf["Log_Returns"]) * (tradingDaysNb ** 0.5))
-
             resultsTable.loc[x, ["Asset Annualized Return %"]] =  (assetPercentPerf + 1) ** (tradingDaysNb / len(self.AssetDf)) - 1
-
             resultsTable.loc[x, ["Asset Annualized Volatility"]] = np.std(self.AssetDf["Log_Returns"]) * (tradingDaysNb ** 0.5)
 
-            transactionTable = pd.DataFrame(transactionTable)
-            #transactionTable["Total P/L"] = transactionTable["P/L"] * transactionTable["Number of shares"]
+            #print(tradingDaysNb * np.mean(self.AssetDf["Log_Returns"]))
+            resultsTable.loc[x, ["Asset Sharpe Ratio"]] = (((assetPercentPerf + 1) ** (tradingDaysNb / len(self.AssetDf)) - 1) - self.rf) / (np.std(self.AssetDf["Log_Returns"]) * (tradingDaysNb ** 0.5))
 
             self.resultsTable = resultsTable
-            self.transactionTable = transactionTable
 
 
             ##################
@@ -755,12 +766,10 @@ class movingAverageCrossover:
 
                 ax2.plot(self.AssetDf.index, buyAndHoldcapital, label="Buy & Hold Scenario", linewidth=0.8)
 
-
                 if len(dateSL) > 0:
                     ax1.plot(dateSL, stopLo, "_", markersize=7, color='r', label="Stop-Loss Activated")
                 if len(dateTp) > 0:
                     ax1.plot(dateTp, takeProf, "_", markersize=7, color='#d000ff', label="Take-Profit Activated")
-
 
 
                 ax1.legend(loc=2, prop={'size': 9})
@@ -843,5 +852,3 @@ class movingAverageCrossover:
             raise ValueError("Wrong optimisation type")
 
         return results
-
-
