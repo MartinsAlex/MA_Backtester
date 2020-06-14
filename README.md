@@ -16,7 +16,7 @@
 
 * 100'000 stocks
 * 120 crypto-currencies
-* 35 currencies quoted in USD
+* 23 currencies quoted in USD
 * Numerous other assets such as indices, futures and ETFs
 
 <p>&nbsp;</p>
