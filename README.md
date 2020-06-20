@@ -681,7 +681,6 @@ cs_strat.transactionTable
 - Short and long positions
 - Commission : 0.5 %
 
---------
 
 ```python
 
@@ -690,9 +689,9 @@ import matplotlib.pyplot as plt
 
 
 brazilStrat = mb.movingAverageCrossover(["DEXBZUS"], 100, 300, "2010-05-01", "2020-05-01", 
-                                   maType="simple", shortLong="both", capital=1000, commission=0.005, plot=True)
+                                   shortLong="both", capital=1000, commission=0.005, plot=True)
 
-spyStrat.analyse()
+brazilStrat.analyse()
 
 
 plt.show()
@@ -799,7 +798,7 @@ brazilStrat.resultsTable
 
 ```python
 
-spyStrat.transactionTable
+brazilStrat.transactionTable
 
 ```
 
