@@ -58,6 +58,13 @@ pip install https://github.com/MartinsAlex/MA_Backtester/archive/master.zip
 
 Arguments, attributes and methods are explained in the class documentation that can be called with the help() built-in function.
 
+```python
+
+import MA_Backtester as mb
+
+help(mb)
+
+```
 &nbsp;
 
 ## Example 1 : SPDR S&P 500 Trust ETF
