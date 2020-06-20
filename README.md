@@ -674,15 +674,270 @@ cs_strat.transactionTable
 
 &nbsp;
 
-## Example 3 : Brazilian Real
+## Example 2 : Brazilian Real
 
-#### Bitcoin, Ethereum, Litecoin, BitcoinCash and XRP. January 2018 to may 2020. Exponential Moving Averages of 8 and 13 days.
+#### From may 2015 to may 2020. Simple Moving Averages of 100 and 300 days. 
 - Initial capital : 1000 USD
 - Short and long positions
-- Commission : 0.1 %
-
+- Commission : 0.5 %
 
 --------
+
+```python
+
+import MA_Backtester as mb
+import matplotlib.pyplot as plt
+
+
+brazilStrat = mb.movingAverageCrossover(["DEXBZUS"], 100, 300, "2010-05-01", "2020-05-01", 
+                                   maType="simple", shortLong="both", capital=1000, commission=0.005, plot=True)
+
+spyStrat.analyse()
+
+
+plt.show()
+
+
+```
+
+![png](readme_files/Figure3.png)
+
+
+
+```python
+
+brazilStrat.resultsTable
+
+```
+
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>From</th>
+      <th>To</th>
+      <th>Ticker</th>
+      <th>Number of Trades</th>
+      <th>Winning Trades</th>
+      <th>Losing Trades</th>
+      <th>Largest Winning Trade</th>
+      <th>Largest Losing Trade</th>
+      <th>Win Rate</th>
+      <th>Expectancy</th>
+      <th>Total Realized Return</th>
+      <th>Total Return</th>
+      <th>Buy &amp; Hold Return</th>
+      <th>Asset Return %</th>
+      <th>Strategy Realized Return %</th>
+      <th>Out/Under-performance %</th>
+      <th>Asset Annualized Return %</th>
+      <th>Strategy Annualized Return %</th>
+      <th>Open position (price)</th>
+      <th>Open Trade P/L</th>
+      <th>Asset Annualized Volatility</th>
+      <th>Strategy Annualized Volatility</th>
+      <th>Asset Sharpe Ratio</th>
+      <th>Strategy Sharpe Ratio</th>
+      <th>Asset Max Drawdown</th>
+      <th>Strategy Max Drawdown</th>
+      <th>Market Exposure</th>
+      <th>99 % Strategy Daily VaR</th>
+      <th>99 % Asset Daily VaR</th>
+      <th>Asset Daily Avg Volume</th>
+      <th>Avg Holding Days</th>
+      <th>Initial Capital</th>
+      <th>Final Capital</th>
+      <th>Used Stop-Loss</th>
+      <th>Used Take-Profit</th>
+      <th>Total fees payed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>2011-07-13</td>
+      <td>2020-05-01</td>
+      <td>DEXBZUS</td>
+      <td>6</td>
+      <td>3</td>
+      <td>3</td>
+      <td>203.209</td>
+      <td>-131.786</td>
+      <td>0.5</td>
+      <td>0.0132372</td>
+      <td>113.405</td>
+      <td>566.155</td>
+      <td>-713.661</td>
+      <td>-0.713661</td>
+      <td>0.113405</td>
+      <td>0.827066</td>
+      <td>-0.133236</td>
+      <td>0.0128571</td>
+      <td>-0.309847</td>
+      <td>458.316</td>
+      <td>0.15126</td>
+      <td>0.116581</td>
+      <td>-0.89029</td>
+      <td>0.450935</td>
+      <td>-0.72959</td>
+      <td>-0.272071</td>
+      <td>0.961434</td>
+      <td>0.0172988</td>
+      <td>0.0216007</td>
+      <td>NaN</td>
+      <td>256</td>
+      <td>1000</td>
+      <td>1566.16</td>
+      <td>0</td>
+      <td>0</td>
+      <td>36.6523</td>
+    </tr>
+  </tbody>
+</table>
+
+
+```python
+
+spyStrat.transactionTable
+
+```
+
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Date</th>
+      <th>Type</th>
+      <th>Price</th>
+      <th>Ticker</th>
+      <th>P/L</th>
+      <th>Number of shares</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2011-11-10</td>
+      <td>Buy Short</td>
+      <td>0.567312</td>
+      <td>DEXBZUS</td>
+      <td>NaN</td>
+      <td>1762</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2013-05-24</td>
+      <td>Sell Short</td>
+      <td>0.487424</td>
+      <td>DEXBZUS</td>
+      <td>0.079887</td>
+      <td>1762</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2013-05-24</td>
+      <td>Buy Long</td>
+      <td>0.487424</td>
+      <td>DEXBZUS</td>
+      <td>NaN</td>
+      <td>2330</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2013-06-25</td>
+      <td>Sell Long</td>
+      <td>0.450308</td>
+      <td>DEXBZUS</td>
+      <td>-0.037116</td>
+      <td>2330</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2013-06-25</td>
+      <td>Buy Short</td>
+      <td>0.450308</td>
+      <td>DEXBZUS</td>
+      <td>NaN</td>
+      <td>2317</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>2014-07-11</td>
+      <td>Sell Short</td>
+      <td>0.450450</td>
+      <td>DEXBZUS</td>
+      <td>-0.000142</td>
+      <td>2317</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2014-07-11</td>
+      <td>Buy Long</td>
+      <td>0.450450</td>
+      <td>DEXBZUS</td>
+      <td>NaN</td>
+      <td>2304</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>2014-10-27</td>
+      <td>Sell Long</td>
+      <td>0.393252</td>
+      <td>DEXBZUS</td>
+      <td>-0.057199</td>
+      <td>2304</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>2014-10-27</td>
+      <td>Buy Short</td>
+      <td>0.393252</td>
+      <td>DEXBZUS</td>
+      <td>NaN</td>
+      <td>2291</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>2016-07-08</td>
+      <td>Sell Short</td>
+      <td>0.304553</td>
+      <td>DEXBZUS</td>
+      <td>0.088699</td>
+      <td>2291</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2016-07-08</td>
+      <td>Buy Long</td>
+      <td>0.304553</td>
+      <td>DEXBZUS</td>
+      <td>NaN</td>
+      <td>3611</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>2018-01-04</td>
+      <td>Sell Long</td>
+      <td>0.309847</td>
+      <td>DEXBZUS</td>
+      <td>0.005294</td>
+      <td>3611</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>2018-01-04</td>
+      <td>Buy Short</td>
+      <td>0.309847</td>
+      <td>DEXBZUS</td>
+      <td>NaN</td>
+      <td>3593</td>
+    </tr>
+  </tbody>
+</table>
+
+
 
 &nbsp;
 
