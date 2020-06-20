@@ -96,7 +96,6 @@ spyStrat.resultsTable
 
 
 
-
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -190,6 +189,7 @@ spyStrat.transactionTable
 ```
 
 
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -207,7 +207,7 @@ spyStrat.transactionTable
       <th>0</th>
       <td>2018-05-15</td>
       <td>Buy Long</td>
-      <td>260.615570</td>
+      <td>259.473755</td>
       <td>SPY</td>
       <td>NaN</td>
       <td>38</td>
@@ -216,16 +216,16 @@ spyStrat.transactionTable
       <th>1</th>
       <td>2018-10-18</td>
       <td>Sell Long</td>
-      <td>268.111938</td>
+      <td>266.937256</td>
       <td>SPY</td>
-      <td>7.496368</td>
+      <td>7.463501</td>
       <td>38</td>
     </tr>
     <tr>
       <th>2</th>
       <td>2018-10-18</td>
       <td>Buy Short</td>
-      <td>268.111938</td>
+      <td>266.937256</td>
       <td>SPY</td>
       <td>NaN</td>
       <td>38</td>
@@ -234,16 +234,16 @@ spyStrat.transactionTable
       <th>3</th>
       <td>2019-01-31</td>
       <td>Sell Short</td>
-      <td>263.364990</td>
+      <td>262.211121</td>
       <td>SPY</td>
-      <td>4.746948</td>
+      <td>4.726135</td>
       <td>38</td>
     </tr>
     <tr>
       <th>4</th>
       <td>2019-01-31</td>
       <td>Buy Long</td>
-      <td>263.364990</td>
+      <td>262.211121</td>
       <td>SPY</td>
       <td>NaN</td>
       <td>39</td>
@@ -252,16 +252,16 @@ spyStrat.transactionTable
       <th>5</th>
       <td>2019-05-29</td>
       <td>Sell Long</td>
-      <td>272.698029</td>
+      <td>271.503265</td>
       <td>SPY</td>
-      <td>9.333038</td>
+      <td>9.292145</td>
       <td>39</td>
     </tr>
     <tr>
       <th>6</th>
       <td>2019-05-29</td>
       <td>Buy Short</td>
-      <td>272.698029</td>
+      <td>271.503265</td>
       <td>SPY</td>
       <td>NaN</td>
       <td>39</td>
@@ -270,16 +270,16 @@ spyStrat.transactionTable
       <th>7</th>
       <td>2019-06-27</td>
       <td>Sell Short</td>
-      <td>287.052521</td>
+      <td>285.794830</td>
       <td>SPY</td>
-      <td>-14.354492</td>
+      <td>-14.291565</td>
       <td>39</td>
     </tr>
     <tr>
       <th>8</th>
       <td>2019-06-27</td>
       <td>Buy Long</td>
-      <td>287.052521</td>
+      <td>285.794830</td>
       <td>SPY</td>
       <td>NaN</td>
       <td>35</td>
@@ -288,16 +288,16 @@ spyStrat.transactionTable
       <th>9</th>
       <td>2019-08-16</td>
       <td>Sell Long</td>
-      <td>284.442932</td>
+      <td>283.196716</td>
       <td>SPY</td>
-      <td>-2.609589</td>
+      <td>-2.598114</td>
       <td>35</td>
     </tr>
     <tr>
       <th>10</th>
       <td>2019-08-16</td>
       <td>Buy Short</td>
-      <td>284.442932</td>
+      <td>283.196716</td>
       <td>SPY</td>
       <td>NaN</td>
       <td>35</td>
@@ -306,52 +306,52 @@ spyStrat.transactionTable
       <th>11</th>
       <td>2019-09-18</td>
       <td>Sell Short</td>
-      <td>296.506042</td>
+      <td>295.206940</td>
       <td>SPY</td>
-      <td>-12.063110</td>
+      <td>-12.010223</td>
       <td>35</td>
     </tr>
     <tr>
       <th>12</th>
       <td>2019-09-18</td>
       <td>Buy Long</td>
-      <td>296.506042</td>
+      <td>295.206940</td>
       <td>SPY</td>
       <td>NaN</td>
-      <td>32</td>
+      <td>33</td>
     </tr>
     <tr>
       <th>13</th>
       <td>2020-03-03</td>
       <td>Sell Long</td>
-      <td>298.484802</td>
+      <td>297.177063</td>
       <td>SPY</td>
-      <td>1.978760</td>
-      <td>32</td>
+      <td>1.970123</td>
+      <td>33</td>
     </tr>
     <tr>
       <th>14</th>
       <td>2020-03-03</td>
       <td>Buy Short</td>
-      <td>298.484802</td>
+      <td>297.177063</td>
       <td>SPY</td>
       <td>NaN</td>
-      <td>32</td>
+      <td>33</td>
     </tr>
     <tr>
       <th>15</th>
       <td>2020-04-30</td>
       <td>Sell Short</td>
-      <td>290.480011</td>
+      <td>289.207336</td>
       <td>SPY</td>
-      <td>8.004791</td>
-      <td>32</td>
+      <td>7.969727</td>
+      <td>33</td>
     </tr>
     <tr>
       <th>16</th>
       <td>2020-04-30</td>
       <td>Buy Long</td>
-      <td>290.480011</td>
+      <td>289.207336</td>
       <td>SPY</td>
       <td>NaN</td>
       <td>34</td>
