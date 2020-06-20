@@ -8,11 +8,8 @@
 
 
 
-# This code is still in development !!
 
-
-
-### Fintech module allowing you to test strategies based on moving averages crossover, on nearly :
+## Python module allowing you to backtest strategies based on moving averages crossover, on nearly :
 
 * 100'000 stocks
 * 120 crypto-currencies
