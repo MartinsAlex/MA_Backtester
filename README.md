@@ -96,6 +96,7 @@ spyStrat.resultsTable
 
 
 
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -115,7 +116,7 @@ spyStrat.resultsTable
       <th>Buy &amp; Hold Return</th>
       <th>Asset Return %</th>
       <th>Strategy Realized Return %</th>
-      <th>Over/Under-performance %</th>
+      <th>Out/Under-performance %</th>
       <th>Asset Annualized Return %</th>
       <th>Strategy Annualized Return %</th>
       <th>Open position (price)</th>
@@ -127,7 +128,8 @@ spyStrat.resultsTable
       <th>Asset Max Drawdown</th>
       <th>Strategy Max Drawdown</th>
       <th>Market Exposure</th>
-      <th>Correlation with Hold &amp; Buy</th>
+      <th>99 % Strategy Daily VaR</th>
+      <th>99 % Asset Daily VaR</th>
       <th>Asset Daily Avg Volume</th>
       <th>Avg Holding Days</th>
       <th>Initial Capital</th>
@@ -140,38 +142,39 @@ spyStrat.resultsTable
   <tbody>
     <tr>
       <th>1</th>
-      <td>2018-01-02</td>
+      <td>2018-03-15</td>
       <td>2020-05-01</td>
       <td>SPY</td>
       <td>8</td>
       <td>5</td>
       <td>3</td>
-      <td>363.988</td>
-      <td>-559.825</td>
+      <td>362.394</td>
+      <td>-557.371</td>
       <td>0.625</td>
-      <td>0.316589</td>
-      <td>75.3385</td>
-      <td>-186.122</td>
-      <td>988.751</td>
-      <td>0.0988751</td>
-      <td>0.00753385</td>
-      <td>-0.0913412</td>
-      <td>0.0413079</td>
-      <td>0.00383611</td>
-      <td>290.48</td>
-      <td>-261.46</td>
-      <td>0.240043</td>
-      <td>0.190163</td>
-      <td>0.163999</td>
-      <td>-0.0487639</td>
+      <td>0.315216</td>
+      <td>84.952</td>
+      <td>-175.363</td>
+      <td>739.807</td>
+      <td>0.0739807</td>
+      <td>0.0084952</td>
+      <td>-0.0654855</td>
+      <td>0.0340602</td>
+      <td>0.00432461</td>
+      <td>289.207</td>
+      <td>-260.315</td>
+      <td>0.243996</td>
+      <td>0.210255</td>
+      <td>0.133733</td>
+      <td>-0.0598712</td>
       <td>-0.337173</td>
-      <td>-0.203475</td>
-      <td>0.841567</td>
-      <td>-0.490094</td>
-      <td>9.26934e+07</td>
+      <td>-0.203692</td>
+      <td>0.919926</td>
+      <td>0.0307678</td>
+      <td>0.0358875</td>
+      <td>9.02594e+07</td>
       <td>62</td>
       <td>10000</td>
-      <td>9813.88</td>
+      <td>9824.64</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
