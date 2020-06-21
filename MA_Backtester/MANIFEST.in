@@ -1,0 +1,2 @@
+include crypto_tickers.csv
+include forex_tickers.csv
