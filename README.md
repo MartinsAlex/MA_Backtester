@@ -1299,6 +1299,7 @@ cryptoStrat.optimize("Strategy Annualized Volatility", fastMaRange= [8, 10],  sl
 ```
 
 
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1313,55 +1314,55 @@ cryptoStrat.optimize("Strategy Annualized Volatility", fastMaRange= [8, 10],  sl
       <th>0</th>
       <td>8.0</td>
       <td>13.0</td>
-      <td>0.788789</td>
+      <td>0.792693</td>
     </tr>
     <tr>
       <th>1</th>
       <td>8.0</td>
       <td>14.0</td>
-      <td>0.788227</td>
+      <td>0.792056</td>
     </tr>
     <tr>
       <th>2</th>
       <td>8.0</td>
       <td>15.0</td>
-      <td>0.782712</td>
+      <td>0.789556</td>
     </tr>
     <tr>
       <th>3</th>
       <td>9.0</td>
       <td>13.0</td>
-      <td>0.788172</td>
+      <td>0.791734</td>
     </tr>
     <tr>
       <th>4</th>
       <td>9.0</td>
       <td>14.0</td>
-      <td>0.786504</td>
+      <td>0.786863</td>
     </tr>
     <tr>
       <th>5</th>
       <td>9.0</td>
       <td>15.0</td>
-      <td>0.786519</td>
+      <td>0.793447</td>
     </tr>
     <tr>
       <th>6</th>
       <td>10.0</td>
       <td>13.0</td>
-      <td>0.808755</td>
+      <td>0.809747</td>
     </tr>
     <tr>
       <th>7</th>
       <td>10.0</td>
       <td>14.0</td>
-      <td>0.810902</td>
+      <td>0.812042</td>
     </tr>
     <tr>
       <th>8</th>
       <td>10.0</td>
       <td>15.0</td>
-      <td>0.785784</td>
+      <td>0.792470</td>
     </tr>
   </tbody>
 </table>
