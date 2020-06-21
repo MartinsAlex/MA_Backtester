@@ -947,7 +947,7 @@ brazilStrat.transactionTable
 ## Example 4 : Analysis of multiple crypto-currencies
 
 #### Bitcoin, Ethereum, Litecoin, BitcoinCash and XRP. January 2018 to may 2020. Exponential Moving Averages of 8 and 13 days.
-- Initial capital : 1000 USD
+- Initial capital : 10'000 USD
 - Short and long positions
 - Commission : 0.1 %
 
@@ -957,13 +957,14 @@ import MA_Backtester as mb
 import matplotlib.pyplot as plt
 
 cryptoStrat = mb.movingAverageCrossover(["BTC-USD", "ETH-USD", "LTC-USD", "BCH-USD", "XRP-USD"], 8, 13, "2018-01-01", "2020-05-01", 
-                                   maType="exp", shortLong="both", capital=1000, commission=0.001)
+                                   maType="exp", shortLong="both", capital=10_000, commission=0.001)
 
 cryptoStrat.analyse()
 
 cryptoStrat.resultsTable
 
 ```
+
 
 
 
@@ -987,7 +988,7 @@ cryptoStrat.resultsTable
       <th>Buy &amp; Hold Return</th>
       <th>Asset Return %</th>
       <th>Strategy Realized Return %</th>
-      <th>Over/Under-performance %</th>
+      <th>Out/Under-performance %</th>
       <th>Asset Annualized Return %</th>
       <th>Strategy Annualized Return %</th>
       <th>Open position (price)</th>
@@ -999,7 +1000,8 @@ cryptoStrat.resultsTable
       <th>Asset Max Drawdown</th>
       <th>Strategy Max Drawdown</th>
       <th>Market Exposure</th>
-      <th>Correlation with Hold &amp; Buy</th>
+      <th>99 % Strategy Daily VaR</th>
+      <th>99 % Asset Daily VaR</th>
       <th>Asset Daily Avg Volume</th>
       <th>Avg Holding Days</th>
       <th>Initial Capital</th>
@@ -1012,193 +1014,198 @@ cryptoStrat.resultsTable
   <tbody>
     <tr>
       <th>1</th>
-      <td>2018-01-01</td>
+      <td>2018-01-14</td>
       <td>2020-05-01</td>
       <td>BTC-USD</td>
-      <td>36</td>
+      <td>35</td>
       <td>12</td>
-      <td>24</td>
-      <td>1.05431e+06</td>
-      <td>-227184</td>
-      <td>0.3333</td>
-      <td>299.844</td>
-      <td>2.22628e+06</td>
-      <td>3.38538e+06</td>
-      <td>-341842</td>
-      <td>-0.341842</td>
-      <td>2.22628</td>
-      <td>2.56812</td>
-      <td>-0.16389</td>
-      <td>0.699682</td>
+      <td>23</td>
+      <td>8301.64</td>
+      <td>-2184.46</td>
+      <td>0.3429</td>
+      <td>332.38</td>
+      <td>17110.1</td>
+      <td>26611</td>
+      <td>-3473.28</td>
+      <td>-0.347328</td>
+      <td>1.71101</td>
+      <td>2.05834</td>
+      <td>-0.169231</td>
+      <td>0.589044</td>
       <td>6606.78</td>
-      <td>1.16233e+06</td>
-      <td>0.809079</td>
-      <td>0.609549</td>
-      <td>-0.222952</td>
-      <td>1.03825</td>
-      <td>-0.815327</td>
-      <td>-0.475904</td>
-      <td>0.9449</td>
-      <td>0.00984759</td>
-      <td>1.50842e+10</td>
+      <td>9527.28</td>
+      <td>0.801572</td>
+      <td>0.472757</td>
+      <td>-0.212907</td>
+      <td>1.26864</td>
+      <td>-0.765788</td>
+      <td>-0.396519</td>
+      <td>0.935714</td>
+      <td>0.0592131</td>
+      <td>0.097047</td>
+      <td>1.50573e+10</td>
       <td>22</td>
-      <td>1000000</td>
-      <td>4.38538e+06</td>
+      <td>10000</td>
+      <td>36611</td>
       <td>0</td>
       <td>0</td>
-      <td>54648.1</td>
+      <td>377.575</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2018-01-01</td>
+      <td>2018-01-14</td>
       <td>2020-05-01</td>
       <td>ETH-USD</td>
-      <td>85</td>
-      <td>29</td>
-      <td>56</td>
-      <td>704959</td>
-      <td>-206924</td>
-      <td>0.3412</td>
-      <td>131.779</td>
-      <td>1.36725e+06</td>
-      <td>2.50768e+06</td>
-      <td>-721313</td>
-      <td>-0.721313</td>
-      <td>1.36725</td>
-      <td>2.08856</td>
-      <td>-0.421151</td>
-      <td>0.459424</td>
+      <td>49</td>
+      <td>17</td>
+      <td>32</td>
+      <td>7059.67</td>
+      <td>-2063.92</td>
+      <td>0.3469</td>
+      <td>8.30164</td>
+      <td>13810.2</td>
+      <td>25213.8</td>
+      <td>-8424.57</td>
+      <td>-0.842457</td>
+      <td>1.38102</td>
+      <td>2.22348</td>
+      <td>-0.552028</td>
+      <td>0.463143</td>
       <td>145.219</td>
-      <td>1.1428e+06</td>
-      <td>1.02435</td>
-      <td>0.786081</td>
-      <td>-0.535495</td>
-      <td>0.683236</td>
-      <td>-0.939625</td>
-      <td>-0.604254</td>
-      <td>0.975381</td>
-      <td>-0.0513255</td>
-      <td>6.27227e+09</td>
+      <td>11427.3</td>
+      <td>1.01421</td>
+      <td>0.772185</td>
+      <td>-0.545703</td>
+      <td>0.946049</td>
+      <td>-0.938316</td>
+      <td>-0.600994</td>
+      <td>0.990476</td>
+      <td>0.0960317</td>
+      <td>0.121271</td>
+      <td>6.27324e+09</td>
       <td>16</td>
-      <td>1000000</td>
-      <td>3.50768e+06</td>
+      <td>10000</td>
+      <td>35213.8</td>
       <td>0</td>
       <td>0</td>
-      <td>52297.3</td>
+      <td>522.029</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>2018-01-01</td>
+      <td>2018-01-14</td>
       <td>2020-05-01</td>
       <td>LTC-USD</td>
-      <td>122</td>
-      <td>43</td>
-      <td>79</td>
-      <td>3.19187e+06</td>
-      <td>-1.50961e+06</td>
-      <td>0.3525</td>
-      <td>93.7691</td>
-      <td>5.87661e+06</td>
-      <td>6.91407e+06</td>
-      <td>-784057</td>
-      <td>-0.784057</td>
-      <td>5.87661</td>
-      <td>6.66067</td>
-      <td>-0.481006</td>
-      <td>1.31594</td>
+      <td>37</td>
+      <td>14</td>
+      <td>23</td>
+      <td>31715.7</td>
+      <td>-14989.2</td>
+      <td>0.3784</td>
+      <td>6.44984</td>
+      <td>58358.1</td>
+      <td>68670.9</td>
+      <td>-7927.81</td>
+      <td>-0.792781</td>
+      <td>5.83581</td>
+      <td>6.62859</td>
+      <td>-0.495371</td>
+      <td>1.30995</td>
       <td>42.9372</td>
-      <td>1.04434e+06</td>
-      <td>1.03682</td>
-      <td>0.820785</td>
-      <td>-0.634451</td>
-      <td>1.07955</td>
-      <td>-0.92085</td>
-      <td>-0.438839</td>
-      <td>0.982415</td>
-      <td>0.00283437</td>
-      <td>2.01499e+09</td>
+      <td>10381.2</td>
+      <td>1.02758</td>
+      <td>0.80506</td>
+      <td>-0.483465</td>
+      <td>1.22878</td>
+      <td>-0.901689</td>
+      <td>-0.438626</td>
+      <td>0.997619</td>
+      <td>0.100744</td>
+      <td>0.123153</td>
+      <td>2.023e+09</td>
       <td>22</td>
-      <td>1000000</td>
-      <td>7.91407e+06</td>
+      <td>10000</td>
+      <td>78670.9</td>
       <td>0</td>
       <td>0</td>
-      <td>150615</td>
+      <td>1496.06</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>2018-01-01</td>
+      <td>2018-01-14</td>
       <td>2020-05-01</td>
       <td>BCH-USD</td>
-      <td>159</td>
-      <td>61</td>
-      <td>98</td>
-      <td>2.18384e+06</td>
-      <td>-1.01185e+06</td>
-      <td>0.3836</td>
-      <td>84.2901</td>
-      <td>3.92802e+06</td>
-      <td>4.37958e+06</td>
-      <td>-892302</td>
-      <td>-0.892302</td>
-      <td>3.92802</td>
-      <td>4.82033</td>
-      <td>-0.614628</td>
-      <td>1.00309</td>
+      <td>37</td>
+      <td>18</td>
+      <td>19</td>
+      <td>21496.5</td>
+      <td>-9968.92</td>
+      <td>0.4865</td>
+      <td>53.035</td>
+      <td>38682</td>
+      <td>43142</td>
+      <td>-8973.97</td>
+      <td>-0.897397</td>
+      <td>3.8682</td>
+      <td>4.7656</td>
+      <td>-0.628186</td>
+      <td>0.992465</td>
       <td>239.769</td>
-      <td>456488</td>
-      <td>1.28352</td>
-      <td>0.965125</td>
-      <td>-0.744708</td>
-      <td>0.746539</td>
-      <td>-0.97328</td>
-      <td>-0.540151</td>
-      <td>0.982415</td>
-      <td>0.0431008</td>
-      <td>1.48351e+09</td>
+      <td>4508.69</td>
+      <td>1.2731</td>
+      <td>0.961197</td>
+      <td>-0.494554</td>
+      <td>0.721432</td>
+      <td>-0.9697</td>
+      <td>-0.532813</td>
+      <td>0.997619</td>
+      <td>0.118945</td>
+      <td>0.15225</td>
+      <td>1.47382e+09</td>
       <td>22</td>
-      <td>1000000</td>
-      <td>5.37958e+06</td>
+      <td>10000</td>
+      <td>53142</td>
       <td>0</td>
       <td>0</td>
-      <td>110203</td>
+      <td>1081.43</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>2018-01-01</td>
+      <td>2018-01-14</td>
       <td>2020-05-01</td>
       <td>XRP-USD</td>
-      <td>191</td>
-      <td>77</td>
-      <td>114</td>
-      <td>516900</td>
-      <td>-292083</td>
-      <td>0.4031</td>
-      <td>70.1709</td>
-      <td>922799</td>
-      <td>1.46447e+06</td>
-      <td>-906353</td>
-      <td>-0.906353</td>
-      <td>0.922799</td>
-      <td>1.82915</td>
-      <td>-0.637004</td>
-      <td>0.344068</td>
+      <td>32</td>
+      <td>16</td>
+      <td>16</td>
+      <td>5168.84</td>
+      <td>-2920.71</td>
+      <td>0.5</td>
+      <td>0.0160149</td>
+      <td>9227.44</td>
+      <td>14643.9</td>
+      <td>-8796.93</td>
+      <td>-0.879693</td>
+      <td>0.922744</td>
+      <td>1.80244</td>
+      <td>-0.601559</td>
+      <td>0.34405</td>
       <td>0.174563</td>
-      <td>543593</td>
-      <td>1.04865</td>
-      <td>0.762404</td>
-      <td>-0.968615</td>
-      <td>0.505879</td>
-      <td>-0.958661</td>
-      <td>-0.532172</td>
-      <td>0.946073</td>
-      <td>0.0632268</td>
-      <td>1.23956e+09</td>
+      <td>5435.72</td>
+      <td>1.01541</td>
+      <td>0.778158</td>
+      <td>-0.593839</td>
+      <td>0.600374</td>
+      <td>-0.924975</td>
+      <td>-0.532171</td>
+      <td>0.960714</td>
+      <td>0.0960376</td>
+      <td>0.121023</td>
+      <td>1.19343e+09</td>
       <td>24</td>
-      <td>1000000</td>
-      <td>2.46447e+06</td>
+      <td>10000</td>
+      <td>24643.9</td>
       <td>0</td>
       <td>0</td>
-      <td>42213.5</td>
+      <td>422.119</td>
     </tr>
   </tbody>
 </table>
