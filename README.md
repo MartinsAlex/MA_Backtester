@@ -57,7 +57,7 @@ Arguments, attributes and methods are explained in the class documentation that 
 
 ```python
 
-import MA_Backtester as mb
+import MA_Backtester.analyzer as mb
 
 help(mb)
 
@@ -73,11 +73,11 @@ help(mb)
 
 ```python
 
-from MA_Backtester import analyzer
+import MA_Backtester.analyzer as mb
 import matplotlib.pyplot as plt
 
 
-spyStrat = analyzer.movingAverageCrossover(["SPY"], 20, 50, "2018-01-01", "2020-05-01", 
+spyStrat = mb.strategyDefiner(["SPY"], 20, 50, "2018-01-01", "2020-05-01", 
                                    maType="simple", plot=True, shortLong="both", capital=10_000)
 
 spyStrat.analyse()
@@ -379,10 +379,10 @@ spyStrat.transactionTable
 
 ```python
 
-import MA_Backtester as mb
+import MA_Backtester.analyzer as mb
 import matplotlib.pyplot as plt
 
-cs_strat = mb.movingAverageCrossover(["cs"], 50, 200, "2004-01-01", "2015-01-01", 
+cs_strat = mb.strategyDefiner(["cs"], 50, 200, "2004-01-01", "2015-01-01", 
                                       maType="weighted", plot=True, shortLong="long", capital=100_000,
                                      stopLoss=0.05, commission=0.005)
 cs_strat.analyse()
@@ -688,11 +688,10 @@ cs_strat.transactionTable
 
 ```python
 
-import MA_Backtester as mb
+import MA_Backtester.analyzer as mb
 import matplotlib.pyplot as plt
 
-
-brazilStrat = mb.movingAverageCrossover(["DEXBZUS"], 100, 300, "2010-05-01", "2020-05-01", 
+brazilStrat = mb.strategyDefiner(["DEXBZUS"], 100, 300, "2010-05-01", "2020-05-01", 
                                    shortLong="both", capital=1000, commission=0.005, plot=True)
 
 brazilStrat.analyse()
@@ -953,10 +952,10 @@ brazilStrat.transactionTable
 
 ```python
 
-import MA_Backtester as mb
+import MA_Backtester.analyzer as mb
 import matplotlib.pyplot as plt
 
-cryptoStrat = mb.movingAverageCrossover(["BTC-USD", "ETH-USD", "LTC-USD", "BCH-USD", "XRP-USD"], 8, 13, "2018-01-01", "2020-05-01", 
+cryptoStrat = mb.strategyDefiner(["BTC-USD", "ETH-USD", "LTC-USD", "BCH-USD", "XRP-USD"], 8, 13, "2018-01-01", "2020-05-01", 
                                    maType="exp", shortLong="both", capital=10_000, commission=0.001)
 
 cryptoStrat.analyse()
