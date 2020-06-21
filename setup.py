@@ -7,7 +7,7 @@ setuptools.setup(
     author="Alexandre MARTINS",
     author_email="alexandre.martins-figueira@etu.hesge.ch",
     url="https://github.com/MartinsAlex/MA_Backtester",
-    packages=setuptools.find_packages(),
+    packages=['MA_Backtester', 'MA_Backtester'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
