@@ -22,5 +22,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
     ],
     python_requires='>=3.6',
-    install_requires=install_requires
+    install_requires=install_requires,
+    include_package_data = True
 )
