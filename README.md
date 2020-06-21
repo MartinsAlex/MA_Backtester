@@ -1221,13 +1221,14 @@ cryptoStrat.optimize("Over/Under-performance %", fastMaRange= [8, 10],  slowMaRa
 ```
 The function returns a pandas dataFrame with all the combinaison tested :
 
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
       <th>fastMA</th>
       <th>slowMA</th>
-      <th>Over/Under-performance %</th>
+      <th>Out/Under-performance %</th>
     </tr>
   </thead>
   <tbody>
@@ -1235,55 +1236,55 @@ The function returns a pandas dataFrame with all the combinaison tested :
       <th>0</th>
       <td>8.0</td>
       <td>13.0</td>
-      <td>3.593365</td>
+      <td>3.616123</td>
     </tr>
     <tr>
       <th>1</th>
       <td>8.0</td>
       <td>14.0</td>
-      <td>3.631902</td>
+      <td>3.308991</td>
     </tr>
     <tr>
       <th>2</th>
       <td>8.0</td>
       <td>15.0</td>
-      <td>3.447292</td>
+      <td>3.318465</td>
     </tr>
     <tr>
       <th>3</th>
       <td>9.0</td>
       <td>13.0</td>
-      <td>3.913140</td>
+      <td>3.935898</td>
     </tr>
     <tr>
       <th>4</th>
       <td>9.0</td>
       <td>14.0</td>
-      <td>4.275443</td>
+      <td>4.137380</td>
     </tr>
     <tr>
       <th>5</th>
       <td>9.0</td>
       <td>15.0</td>
-      <td>3.075884</td>
+      <td>2.990116</td>
     </tr>
     <tr>
       <th>6</th>
       <td>10.0</td>
       <td>13.0</td>
-      <td>3.583561</td>
+      <td>3.606319</td>
     </tr>
     <tr>
       <th>7</th>
       <td>10.0</td>
       <td>14.0</td>
-      <td>2.452192</td>
+      <td>2.364461</td>
     </tr>
     <tr>
       <th>8</th>
       <td>10.0</td>
       <td>15.0</td>
-      <td>1.926440</td>
+      <td>1.848107</td>
     </tr>
   </tbody>
 </table>
