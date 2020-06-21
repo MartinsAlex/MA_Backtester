@@ -23,6 +23,5 @@ setuptools.setup(
     ],
     python_requires='>=3.6',
     install_requires=install_requires,
-    package_data={'MA_Backtester': ['tickerLists/*.csv'],
-    include_package_data = True
+    package_data={'MA_Backtester': ['tickerLists/*.csv']
 )
