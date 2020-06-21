@@ -73,11 +73,11 @@ help(mb)
 
 ```python
 
-import MA_Backtester as mb
+from MA_Backtester import analyzer
 import matplotlib.pyplot as plt
 
 
-spyStrat = mb.movingAverageCrossover(["SPY"], 20, 50, "2018-01-01", "2020-05-01", 
+spyStrat = analyzer.movingAverageCrossover(["SPY"], 20, 50, "2018-01-01", "2020-05-01", 
                                    maType="simple", plot=True, shortLong="both", capital=10_000)
 
 spyStrat.analyse()
