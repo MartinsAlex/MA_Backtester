@@ -1216,7 +1216,7 @@ cryptoStrat.resultsTable
 
 ```python
 
-cryptoStrat.optimize("Over/Under-performance %", fastMaRange= [8, 10],  slowMaRange = [13, 15], type="max")
+cryptoStrat.optimize("Out/Under-performance %", fastMaRange= [8, 10],  slowMaRange = [13, 15], type="max")
 
 ```
 The function returns a pandas dataFrame with all the combinaison tested :
