@@ -1,1 +1,1 @@
-import MA_Backtester
+from MA_Backtester import *
