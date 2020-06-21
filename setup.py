@@ -6,7 +6,6 @@ setuptools.setup(
     version="0.0.1",
     author="Alexandre MARTINS",
     author_email="alexandre.martins-figueira@etu.hesge.ch",
-    description="A small example package",
     url="https://github.com/MartinsAlex/MA_Backtester",
     packages=setuptools.find_packages(),
     classifiers=[
