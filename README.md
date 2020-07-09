@@ -677,7 +677,7 @@ cs_strat.transactionTable
 
 &nbsp;
 
-## Example 2 : Brazilian Real
+## Example 3 : Brazilian Real
 
 #### From may 2015 to may 2020. Simple Moving Averages of 100 and 300 days. 
 - Initial capital : 1000 USD
