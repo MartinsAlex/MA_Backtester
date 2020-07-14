@@ -1214,10 +1214,11 @@ cryptoStrat.resultsTable
 
 ```python
 
-cryptoStrat.optimize("Out/Under-performance %", fastMaRange= [8, 10],  slowMaRange = [13, 15], type="max")
+optiTable = cryptoStrat.optimize("Out/Under-performance %", fastMaRange= [8, 10],  slowMaRange = [13, 15], type="max")
+
+optiTable
 
 ```
-The function returns a pandas dataFrame with all the combinaison tested :
 
 
 <table border="1" class="dataframe">
@@ -1292,7 +1293,9 @@ The function returns a pandas dataFrame with all the combinaison tested :
 
 ```python
 
-cryptoStrat.optimize("Strategy Annualized Volatility", fastMaRange= [8, 10],  slowMaRange = [13, 15], type="min")
+optiTable = cryptoStrat.optimize("Strategy Annualized Volatility", fastMaRange= [8, 10],  slowMaRange = [13, 15], type="min")
+
+optiTable
 
 ```
 
